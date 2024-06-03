@@ -1404,4 +1404,46 @@ Tab:AddButton({
 
   end
 })
+Tab:AddButton({
+  Name = "战斗大亨Enginr",
+  Callback = function ()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/megamoeus/UI-Engine-V2/main/OWTPublic"))()
+  end
+})
+Tab:AddButton({
+  Name = "战斗大亨Chill HUB",
+  Callback = function ()
+   loadstring(game:HttpGet'https://raw.githubusercontent.com/Macintosh1983/ChillHubMain/main/ChillHubOilWarfareTycoon.lua')() 
+  end
+})
+Tab:AddButton({
+  Name = "河北唐县",
+  Callback = function ()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Sw1ndlerScripts/RobloxScripts/main/Tang%20Country.lua"))()
+  end
+})
+Tab:AddButton({
+  Name = "不知名",
+  Callback = function ()
+    loadstring(game:HttpGet(('https://pastefy.app/G2ewUbqj/raw'),true))()
+  end
+})
+Tab:AddButton({
+  Name = "吃掉世界hub",
+  Callback = function ()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/AppleScript001/Eat_World_Simulator/main/README.md"),true))()
+  end
+})
+Tab:AddButton({
+  Name = "战斗勇士",
+  Callback = function ()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/Combat-Warriors/main/Script"))();
+  end
+})
+Tab:AddButton({
+  Name = "一路向西",
+  Callback = function ()
+    loadstring(game:HttpGetAsync("https://pastebin.com/raw/fYMnAEeJ"))()
+  end
+})
 
