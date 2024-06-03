@@ -2,7 +2,7 @@ local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
     Title = "小凌中心-1.6",
-    Text = "加载....已开启反挂机",
+    Text = "加载GUI中请等待....(反挂机必须启动!)",
     Duration = 5, 
 })
 print("反挂机")
@@ -1131,7 +1131,7 @@ Tab:AddParagraph("制作：小凌")
 Tab:AddParagraph("该脚本云端更新！")
 Tab:AddParagraph("谢谢群里的《你猜 喵~》帮我测试")
 Tab:AddParagraph("《一根葱是一个furry!!!》")
-Tab:AddParagraph("UI:Krx群")
+Tab:AddParagraph("你别发神经啊")
 Tab:AddParagraph("缝合大佬小凌")
 Tab:AddParagraph("QB脚本作者对不起我不该骂你！！！")
 Tab:AddParagraph("退休对不起我不该开源的")
@@ -1446,4 +1446,4 @@ Tab:AddButton({
     loadstring(game:HttpGetAsync("https://pastebin.com/raw/fYMnAEeJ"))()
   end
 })
-
+Tab:AddParagraph("球球 湘鲁 别吹更战争大亨了😭😭😭")
