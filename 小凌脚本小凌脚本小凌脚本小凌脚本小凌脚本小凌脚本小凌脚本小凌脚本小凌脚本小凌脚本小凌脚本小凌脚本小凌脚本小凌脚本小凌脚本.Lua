@@ -1406,42 +1406,17 @@ Tab:AddButton({
 })
 
 local about = Window:MakeTab({
-    Name = "河北唐县自动刷钱",
+    Name = "河北唐县hub",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
 Tab:AddButton({
-  Name = "开始",
+  Name = "外国的",
   Callback = function ()
-    false, function(AM)
-    _G.autoFarm = AM
-    if AM then
-        autoFarm()
-    end
-    game.RunService.Stepped:Connect(function()
-        local virtualUser = game:GetService('VirtualUser')
-        virtualUser:CaptureController()
-        function teleportTo(CFrame) 
-            game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame
-        end
-        _G.autoFarm = true
-        function autoFarm()
-            while _G.autoFarm do
-                fireclickdetector(game:GetService("Workspace").DeliverySys.Misc["Package Pile"].ClickDetector)
-                task.wait(2.2)
-                for _,point in pairs(game:GetService("Workspace").DeliverySys.DeliveryPoints:GetChildren()) do
-                    if point.Locate.Locate.Enabled then
-                        teleportTo(point.CFrame)
-                    end
-                end
-                task.wait(0)
-            end
-        end
-    end)
-end)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Sw1ndlerScripts/RobloxScripts/main/Tang%20Country.lua"))()
   end
 })
-Tab:AddParagraph("需要送货司机否则用不了⭐")
+
 
 local about = Window:MakeTab({
     Name = "一路向西",
@@ -1459,5 +1434,73 @@ Tab:AddButton({
   Name = "汉化版(需要白名单)",
   Callback = function ()
     loadstring(game:HttpGetAsync("https://pastebin.com/raw/fYMnAEeJ"))()
+  end
+})
+
+local about = Window:MakeTab({
+    Name = "战斗大亨(求求 湘鲁 别崔了！！)",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+  Name = "Chill Hub",
+  Callback = function ()
+    loadstring(game:HttpGet'https://raw.githubusercontent.com/Macintosh1983/ChillHubMain/main/ChillHubOilWarfareTycoon.lua')()
+  end
+})
+Tab:AddButton({
+  Name = "Engine-V2",
+  Callback = function ()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/megamoeus/UI-Engine-V2/main/OWTPublic"))()
+  end
+})
+Tab:AddButton({
+  Name = "不知名",
+  Callback = function ()
+    loadstring(game:HttpGet(('https://pastefy.app/G2ewUbqj/raw'),true))()
+  end
+})
+
+local about = Window:MakeTab({
+    Name = "以后更新的脚本全在这",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+  Name = "luaware",
+  Callback = function ()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/frencaliber/LuaWareLoader.lw/main/luawareloader.wtf",true))()
+  end
+})
+Tab:AddButton({
+  Name = "飞",
+  Callback = function ()
+    loadstring(game:HttpGet("https://pastebin.com/raw/JEdkPtA1"))()
+  end
+})
+Tab:AddButton({
+  Name = "飞车",
+  Callback = function ()
+    loadstring(game:HttpGet("https://pastebin.com/raw/MHE1cbWF"))()
+  end
+})
+Tab:AddButton({
+  Name = "白脚本伐木",
+  Callback = function ()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/伐木大亨22.lua", true))()
+  end
+})
+Tab:AddButton({
+  Name = "无卡密三角洲",
+  Callback = function ()
+    loadstring(rawget(game:GetObjects("rbxassetid://3623753581"), 1).Source)("Pepsi Byte")loadstring(game:HttpGet("https://raw.githubusercontent.com/LOOF-sys/Roblox-Shit/main/SharkBite.lua",true))()
+  end
+})
+Tab:AddButton({
+  Name = "脚本中心xc",
+  Callback = function ()
+    loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\103\101\109\120\72\119\65\49"))()
   end
 })
