@@ -1296,95 +1296,111 @@ Tab:AddButton({
   Name = "MSDOORS",
   Callback = function ()
     loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSHUB_Loader.lua"),true))()
+
   end
 })
 Tab:AddButton({
   Name = "猫猫2.0",
   Callback = function ()
     getgenv().MAO = "猫猫王者脚本群935143896"loadstring(game:HttpGet("https://raw.githubusercontent.com/dkfkfkfjfkfjdj/longshu/main/%E6%B7%B7%E6%B7%86%E6%96%87%E4%BB%B6.lua"))()("猫猫脚本 V2.0")
+
   end
 })
 Tab:AddButton({
   Name = "不知名",
   Callback = function ()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))();
+
   end
 })
 Tab:AddButton({
   Name = "不知名",
   Callback = function ()
-    loadstring(game:HttpGet("https://ayangwp.cn/api/v3/file/get/9281/m%E8%84%9A%E6%9C%AC%E4%BA%8C%E4%BB%A3.txt?sign=JBB6aabVopKLdV2EdLGV0RUN1kDDNLxk7fWCcbZlDkk%3D%3A0"))()
+   loadstring(game:HttpGet("https://ayangwp.cn/api/v3/file/get/9281/m%E8%84%9A%E6%9C%AC%E4%BA%8C%E4%BB%A3.txt?sign=JBB6aabVopKLdV2EdLGV0RUN1kDDNLxk7fWCcbZlDkk%3D%3A0"))()
+
   end
 })
 Tab:AddButton({
   Name = "msdoors2.0",
   Callback = function ()
-    https://raw.githubusercontent.com/mstudio45/MSDOORS/7bd97c2d956a775d683c2d7973d79715b30998ea/MSDOORS/Moonsec.lua
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/mstudio45/MSDOORS/7bd97c2d956a775d683c2d7973d79715b30998ea/MSDOORS/Moonsec.lua'))()
+
   end
 })
 Tab:AddButton({
   Name = "青脚本1",
   Callback = function ()
     loadstring(game:HttpGet('https://rentry.co/ct293/raw'))()
+
   end
 })
 Tab:AddButton({
   Name = "青脚本2",
   Callback = function ()
     loadstring(game:HttpGet('https://rentry.co/cyq78/raw'))()
+
   end
 })
 Tab:AddButton({
   Name = "鲨脚本",
   Callback = function ()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/sharksharksharkshark/shark-shark-shark-shark-shark/main/shark-scriptlollol.txt",true))()
+
   end
 })
 Tab:AddButton({
   Name = "白？",
   Callback = function ()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringUjHI6RQpz2o8", true))()
+
   end
 })
 Tab:AddButton({
   Name = "忍者ui？",
   Callback = function ()
-    loadstring(game:HttpGet("https://pastebin.com/raw/2UjrXwTV")))
+    loadstring(game:HttpGet("https://pastebin.com/raw/2UjrXwTV"))()
+
   end
 })
 Tab:AddButton({
   Name = "FE半死不活",
   Callback = function ()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/PYXDYT/DinoBlox/main/FE Script'),true))()
+
   end
 })
 Tab:AddButton({
   Name = "说话ui",
   Callback = function ()
     loadstring(game:GetObjects("rbxassetid://1262435912")[1].Source)()
+
   end
 })
 Tab:AddButton({
   Name = "龙",
   Callback = function ()
     long = "龙脚本"qun = "群号:786515108"loadstring(game:HttpGet("https://raw.githubusercontent.com/longshulol/long/main/longshu/long"))()
+
   end
 })
 Tab:AddButton({
   Name = "小云伐木大亨",
   Callback = function ()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/伐木大亨22.lua", true))()
+
   end
 })
 Tab:AddButton({
   Name = "云脚本？",
   Callback = function ()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/LOL/main/云脚本Cloud script.lua", true))()
+
   end
 })
 Tab:AddButton({
   Name = "建船寻宝",
   Callback = function ()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/urmomjklol69/GoldFarmBabft/main/GoldFarm.lua'),true))()
+
   end
 })
