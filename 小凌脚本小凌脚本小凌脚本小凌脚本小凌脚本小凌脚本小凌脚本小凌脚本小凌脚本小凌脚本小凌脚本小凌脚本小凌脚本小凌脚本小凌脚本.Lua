@@ -13,7 +13,7 @@ print("反挂机")
 		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
 local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/SePpsSPZ'))()
-local Window = OrionLib:MakeWindow({Name = "小凌中心-1.6", HidePremium = false, SaveConfig = true,IntroText = "感谢您执行小凌中心", ConfigFolder = "热烈欢迎"})
+local Window = OrionLib:MakeWindow({Name = "小凌中心-1.6", HidePremium = false, SaveConfig = true,IntroText = "感谢您执行小凌中心(脚本在公告下面)", ConfigFolder = "热烈欢迎"})
 local about = Window:MakeTab({
     Name = "信息-XL",
     Icon = "rbxassetid://4483345998",
@@ -29,7 +29,7 @@ local Tab = Window:MakeTab({
   })
   
  Tab:AddButton({
-	Name = "L1S(落叶中心)",
+	Name = "K1S(落叶中心)",
 	Callback = function()
 getgenv().LS="落叶中心"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/krlpl/Deciduous-center-LS/main/%E8%90%BD%E5%8F%B6%E4%B8%AD%E5%BF%83%E6%B7%B7%E6%B7%86.txt"))()
