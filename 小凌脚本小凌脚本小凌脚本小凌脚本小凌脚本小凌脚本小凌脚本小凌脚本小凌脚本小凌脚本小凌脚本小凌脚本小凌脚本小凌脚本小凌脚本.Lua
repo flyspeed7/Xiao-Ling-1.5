@@ -1404,3 +1404,60 @@ Tab:AddButton({
 
   end
 })
+
+local about = Window:MakeTab({
+    Name = "河北唐县自动刷钱",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+Tab:AddButton({
+  Name = "开始",
+  Callback = function ()
+    false, function(AM)
+    _G.autoFarm = AM
+    if AM then
+        autoFarm()
+    end
+    game.RunService.Stepped:Connect(function()
+        local virtualUser = game:GetService('VirtualUser')
+        virtualUser:CaptureController()
+        function teleportTo(CFrame) 
+            game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame
+        end
+        _G.autoFarm = true
+        function autoFarm()
+            while _G.autoFarm do
+                fireclickdetector(game:GetService("Workspace").DeliverySys.Misc["Package Pile"].ClickDetector)
+                task.wait(2.2)
+                for _,point in pairs(game:GetService("Workspace").DeliverySys.DeliveryPoints:GetChildren()) do
+                    if point.Locate.Locate.Enabled then
+                        teleportTo(point.CFrame)
+                    end
+                end
+                task.wait(0)
+            end
+        end
+    end)
+end)
+  end
+})
+Tab:AddParagraph("需要送货司机否则用不了⭐")
+
+local about = Window:MakeTab({
+    Name = "一路向西",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+  Name = "不知名弹窗",
+  Callback = function ()
+    loadstring(game:GetObjects("rbxassetid://10040701935")[1].Source)()
+  end
+})
+Tab:AddButton({
+  Name = "汉化版(需要白名单)",
+  Callback = function ()
+    loadstring(game:HttpGetAsync("https://pastebin.com/raw/fYMnAEeJ"))()
+  end
+})
