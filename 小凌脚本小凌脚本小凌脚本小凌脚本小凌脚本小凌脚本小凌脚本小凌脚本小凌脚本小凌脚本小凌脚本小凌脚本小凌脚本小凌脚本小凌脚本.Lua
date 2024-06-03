@@ -1,7 +1,7 @@
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
-    Title = "小凌中心-1.6",
+    Title = "小凌中心-1.7",
     Text = "加载GUI中请等待....(反挂机必须启动!)",
     Duration = 5, 
 })
@@ -13,7 +13,7 @@ print("反挂机")
 		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
 local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/SePpsSPZ'))()
-local Window = OrionLib:MakeWindow({Name = "小凌中心-1.6", HidePremium = false, SaveConfig = true,IntroText = "感谢您执行小凌中心(脚本在公告下面)", ConfigFolder = "热烈欢迎"})
+local Window = OrionLib:MakeWindow({Name = "小凌中心-1.7-Evade", HidePremium = false, SaveConfig = true,IntroText = "感谢您执行小凌中心(脚本在公告下面)", ConfigFolder = "热烈欢迎"})
 local about = Window:MakeTab({
     Name = "信息-XL",
     Icon = "rbxassetid://4483345998",
@@ -1243,7 +1243,7 @@ Tab:AddButton({
 Tab:AddButton({
   Name = "脚本中心3",
   Callback = function ()
-    loadstring(game:HttpGet("https://pastebin.com/raw/XhQpcE5m"))()
+    loadstring(game:HttpGet("https://pastebin.com/raw/XhQpcE5m9"))()
     
   end
 })
@@ -1656,4 +1656,27 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://lkhub.net/s/loader.lua"))()
   end
 })
-
+Tab:AddButton({
+  Name = "FE动作",
+  Callback = function ()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/1p6xnBNf'),true))()
+  end
+})
+Tab:AddButton({
+  Name = "走路甩飞",
+  Callback = function ()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI"))()
+  end
+})
+Tab:AddButton({
+  Name = "陈脚本",
+  Callback = function ()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/main/%E6%98%AF%E9%99%88"))()
+  end
+})
+Tab:AddButton({
+	Name = "点击复制陈脚本卡密",
+	Callback = function()
+	setclipboard("U2FsdGVkX1/gbhCW+xDOFYcV1pydxb/ni+9cAk72+WM=")
+end
+})
