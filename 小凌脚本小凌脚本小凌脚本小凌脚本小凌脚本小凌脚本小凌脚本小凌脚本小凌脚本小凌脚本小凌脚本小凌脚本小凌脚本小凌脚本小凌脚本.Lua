@@ -1523,4 +1523,137 @@ end)
 
   end
 })
+Tab:AddButton({
+  Name = "最强战场",
+  Callback = function ()
+    loadstring(Game:HttpGet("https://pastefy.app/oKLqVHKF/raw"))()
+  end
+})
+Tab:AddButton({
+  Name = "地岩脚本",
+  Callback = function ()
+    loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\98\98\97\109\120\98\98\97\109\120\98\98\97\109\120\47\99\111\100\101\115\112\97\99\101\115\45\98\108\97\110\107\47\109\97\105\110\47\37\69\55\37\57\57\37\66\68\34\41\41\40\41")()
+  end
+})
+Tab:AddButton({
+  Name = "小星脚本",
+  Callback = function ()
+    loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\115\104\122\46\97\108\47\82\112\55\100\34\41\41\40\41\10")()
+  end
+})
+Tab:AddButton({
+  Name = "天脚本",
+  Callback = function ()
+    loadstring(game:HttpGet("https://shz.al/~xiaotianScript"))()
+  end
+})
+Tab:AddButton({
+  Name = "黑洞(E)",
+  Callback = function ()
+    local UserInputService = game:GetService("UserInputService")
+local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
+local Folder = Instance.new("Folder", game:GetService("Workspace"))
+local Part = Instance.new("Part", Folder)
+local Attachment1 = Instance.new("Attachment", Part)
+Part.Anchored = true
+Part.CanCollide = false
+Part.Transparency = 1
+local Updated = Mouse.Hit + Vector3.new(0, 5, 0)
+local NetworkAccess = coroutine.create(function()
+    settings().Physics.AllowSleep = false
+    while game:GetService("RunService").RenderStepped:Wait() do
+        for _, Players in next, game:GetService("Players"):GetPlayers() do
+            if Players ~= game:GetService("Players").LocalPlayer then
+                Players.MaximumSimulationRadius = 0 
+                sethiddenproperty(Players, "SimulationRadius", 0) 
+            end 
+        end
+        game:GetService("Players").LocalPlayer.MaximumSimulationRadius = math.pow(math.huge, math.huge)
+        setsimulationradius(math.huge) 
+    end 
+end) 
+coroutine.resume(NetworkAccess)
+
+local function EnhanceAndInvinciblePart(part)
+    if part:IsA("Part") and part.Anchored == false and part.Parent:FindFirstChild("Humanoid") == nil and part.Parent:FindFirstChild("Head") == nil and part.Name ~= "Handle" then
+        Mouse.TargetFilter = part
+        for _, x in next, part:GetChildren() do
+            if x:IsA("BodyAngularVelocity") or x:IsA("BodyForce") or x:IsA("BodyGyro") or x:IsA("BodyPosition") or x:IsA("BodyThrust") or x:IsA("BodyVelocity") or x:IsA("RocketPropulsion") then
+                x:Destroy()
+            end
+        end
+        if part:FindFirstChild("Attachment") then
+            part:FindFirstChild("Attachment"):Destroy()
+        end
+        if part:FindFirstChild("AlignPosition") then
+            part:FindFirstChild("AlignPosition"):Destroy()
+        end
+        if part:FindFirstChild("Torque") then
+            part:FindFirstChild("Torque"):Destroy()
+        end
+        part.CanCollide = false
+        local Torque = Instance.new("Torque", part)
+        Torque.Torque = Vector3.new(100000, 100000, 100000)
+        local AlignPosition = Instance.new("AlignPosition", part)
+        local Attachment2 = Instance.new("Attachment", part)
+        Torque.Attachment0 = Attachment2
+        AlignPosition.MaxForce = 9999999999999999
+        AlignPosition.MaxVelocity = math.huge
+        AlignPosition.Responsiveness = 200
+        AlignPosition.Attachment0 = Attachment2 
+        AlignPosition.Attachment1 = Attachment1
+    end
+end
+
+for _, part in next, game:GetService("Workspace"):GetDescendants() do
+    EnhanceAndInvinciblePart(part)
+end
+
+game:GetService("Workspace").DescendantAdded:Connect(function(part)
+    EnhanceAndInvinciblePart(part)
+end)
+
+UserInputService.InputBegan:Connect(function(input, isProcessed)
+    if input.KeyCode == Enum.KeyCode.E and not isProcessed then
+       Updated = Mouse.Hit + Vector3.new(0, 5, 0)
+    end
+end)
+
+spawn(function()
+    while game:GetService("RunService").RenderStepped:Wait() do
+        Attachment1.WorldCFrame = Updated
+    end
+end)
+  end
+})
+Tab:AddButton({
+  Name = "绿脚本",
+  Callback = function ()
+    loadstring(game:HttpGet("https://pastebin.com/raw/Esw6YQKR"))()
+  end
+})
+Tab:AddButton({
+  Name = "雷脚本",
+  Callback = function ()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/tPB47inG')))()
+  end
+})
+Tab:AddButton({
+  Name = "冰脚本",
+  Callback = function ()
+    loadstring(game:HttpGet("https://pastebin.com/raw/GR4ChWKv"))()
+  end
+})
+Tab:AddButton({
+  Name = "俄亥(指令)",
+  Callback = function ()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/longshulol/long/main/longshu/Ohio"))()
+  end
+})
+Tab:AddButton({
+  Name = "巴掌",
+  Callback = function ()
+    loadstring(game:HttpGet("https://lkhub.net/s/loader.lua"))()
+  end
+})
 
