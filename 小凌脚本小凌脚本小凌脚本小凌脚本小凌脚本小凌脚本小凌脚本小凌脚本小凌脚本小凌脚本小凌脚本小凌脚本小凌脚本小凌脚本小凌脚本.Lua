@@ -1135,7 +1135,6 @@ Tab:AddParagraph("你别发神经啊")
 Tab:AddParagraph("缝合大佬小凌")
 Tab:AddParagraph("QB脚本作者对不起我不该骂你！！！")
 Tab:AddParagraph("退休对不起我不该开源的")
-Tab:AddParagraph("天呐，重大更新!!!")
 Tab:AddButton({
 	Name = "小凌💓",
 	Callback = function()
@@ -1705,7 +1704,6 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Prymoric/Alaxus-Refinement-/main/Alaxus%20Blade%20Ball",true))()
   end
 })
-
 Tab:AddButton({
   Name = "BF",
   Callback = function ()
@@ -1722,7 +1720,6 @@ Tab:AddButton({
   Name = "丁丁脚本(免费版)",
   Callback = function ()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/vvbnn/main/%E4%B8%81%E4%B8%81%E8%84%9A%E6%9C%AC%E9%98%89%E5%89%B2.txt"))()
-
   end
 })
 
