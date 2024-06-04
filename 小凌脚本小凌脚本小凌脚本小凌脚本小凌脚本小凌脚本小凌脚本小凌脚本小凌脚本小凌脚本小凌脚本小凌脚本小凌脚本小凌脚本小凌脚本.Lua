@@ -7,7 +7,7 @@ CoreGui:SetCore("SendNotification", {
 })
 CoreGui:SetCore("SendNotification", {
     Title = "加载GUI成功",
-    Text = ""," "..game.Players.LocalPlayer.Name.."",
+    Text = "正在打开UI",
     Duration = 5, 
 })
 print("反挂机开启成功")
@@ -18,7 +18,7 @@ print("反挂机开启成功")
 		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
 local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/SePpsSPZ'))()
-local Window = OrionLib:MakeWindow({Name = "1.8-Script-小凌中心", HidePremium = false, SaveConfig = true,IntroText = ""," "..game.Players.LocalPlayer.Name.."感谢您执行小凌中心(脚本在公告下面)", ConfigFolder = "热烈欢迎"})
+local Window = OrionLib:MakeWindow({Name = "1.8-Script-小凌中心", HidePremium = false, SaveConfig = true,IntroText = "..game.Players.LocalPlayer.Name.. 感谢您执行小凌中心(脚本在公告下面)", ConfigFolder = "热烈欢迎"})
 local about = Window:MakeTab({
     Name = "信息-XL",
     Icon = "rbxassetid://4483345998",
@@ -1788,3 +1788,16 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/vvbnn/main/%E4%B8%81%E4%B8%81%E8%84%9A%E6%9C%AC%E9%98%89%E5%89%B2.txt"))()
   end
 })
+
+local about = Window:MakeTab({
+    Name = "看看以后这更新了什么吧！",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+Tab:AddButton({
+  Name = "普通的测试",
+  Callback = function ()
+    
+  end
+})
+Tab:AddParagraph("看一下测试成功吗")
