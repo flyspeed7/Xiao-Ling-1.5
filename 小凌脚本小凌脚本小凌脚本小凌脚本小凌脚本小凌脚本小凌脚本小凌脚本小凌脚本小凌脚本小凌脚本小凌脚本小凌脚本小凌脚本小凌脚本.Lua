@@ -1681,115 +1681,14 @@ Tab:AddButton({
 end
 })
 Tab:AddButton({
-  Name = "封脚本",
+  Name = "开启反挂机(ui爆炸了)",
   Callback = function ()
-    loadstring(game:HttpGet'https://github.com/RunDTM/roblox-bluescreen/raw/main/bsod.lua'))
+  print("反挂机开启成功")
+		local vu = game:GetService("VirtualUser")
+		game:GetService("Players").LocalPlayer.Idled:connect(function()
+		   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		   wait(1)
+		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		end)
   end
-})
-Tab:AddButton({
-  Name = "刀刃球最强？",
-  Callback = function () loadstring(game:HttpGet("https://paste.gg/p/anonymous/1734a4ee207844b994df2f36157afacd/files/1e79ac12fc8a47ef8263d5e9d43b7137/raw"))()
-  end
-})
-Tab:AddButton({
-  Name = "刀刃球catsus",
-  Callback = function () loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/-beta-/main/AutoParry.lua"))()
-  end
-})
-Tab:AddButton({
-  Name = "刀刃球Alaxus",
-  Callback = function () loadstring(game:HttpGet("https://raw.githubusercontent.com/Prymoric/Alaxus-Refinement-/main/Alaxus%20Blade%20Ball",true))()
-  end
-})
-Tab:AddButton({
-  Name = "BF",
-  Callback = function () loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua")()
-  end
-})
-Tab:AddButton({
-  Name = "nico'Bot Dakrai-X",
-  Callback = function () loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/NicoNextBots", true))()
-  end
-})
-Tab:AddButton({
-  Name = "丁丁脚本(免费版)",
-  Callback = function () loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/vvbnn/main/%E4%B8%81%E4%B8%81%E8%84%9A%E6%9C%AC%E9%98%89%E5%89%B2.txt"))()
-  end
-})
-
-Tab:AddButton({
-  Name = "河流脚本",
-  Callback = function () loadstring(game:HttpGet("https://raw.githubusercontent.com/AWDX-DYVB/test/main/%E6%B2%B3%E6%B5%81%E6%97%A0%E5%AF%86%E9%92%A5.lua"))()
-  end
-})
-Tab:AddButton({
-  Name = "静新脚本",
-  Callback = function ()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/jxdjbx/gggggghjjnbb/main/jdjdd"))()
-  end
-})
-Tab:AddButton({
-  Name = "磁铁",
-  Callback = function ()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/MagnetByNerd.lua"))()
-  end
-})
-Tab:AddButton({
-  Name = "北极脚本",
-  Callback = function ()
-    loadstring(game:HttpGet("https://pastebin.com/raw/KwARpDxV",true))()
-  end
-})
-
-Tab:AddButton({
-  Name = "小猫",
-  Callback = function ()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Maxwell Plushie"))()
-  end
-})
-Tab:AddButton({
-  Name = "水下世界1.5",
-  Callback = function () loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\115\106\115\105\100\106\100\110\110\115\110\115\110\115\47\115\106\115\105\100\106\100\110\110\115\110\115\110\115\47\109\97\105\110\47\82\69\65\68\77\69\46\109\100\34\41\41\40\41")()
-  end
-})
-Tab:AddButton({
-  Name = "？？",
-  Callback = function ()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))();
-  end
-})
-Tab:AddButton({
-  Name = "皇脚本",
-  Callback = function ()
-    loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\80\100\84\55\99\65\82\84"))()
-  end
-})
-Tab:AddButton({
-  Name = "神光",
-  Callback = function ()
-    loadstring(game:HttpGet(utf8.char((function() return table.unpack({104,116,116,112,115,58,47,47,112,97,115,116,101,98,105,110,46,99,111,109,47,114,97,119,47,56,102,50,76,99,113,113,80})end)())))()
-  end
-})
-Tab:AddButton({
-  Name = "？？",
-  Callback = function ()
-    loadstring(game:HttpGet("https://ayangwp.cn/api/v3/file/get/9281/m%E8%84%9A%E6%9C%AC%E4%BA%8C%E4%BB%A3.txt?sign=JBB6aabVopKLdV2EdLGV0RUN1kDDNLxk7fWCcbZlDkk%3D%3A0"))()
-  end
-})
-Tab:AddButton({
-  Name = "白灰脚本",
-  Callback = function ()
-    _G.Clouduilib = "白灰脚作者小云，加载出十几秒"loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/White-ash-script/main/%E7%99%BD%E7%81%B0%E8%84%9A%E6%9C%ACbeta.lua", true))()
-  end
-})
-Tab:AddButton({
-  Name = "猫猫脚本",
-  Callback = function () loadstring(game:HttpGet("https://ayangwp.cn/api/v3/file/get/9281/m%E8%84%9A%E6%9C%AC%E4%BA%8C%E4%BB%A3.txt?sign=JBB6aabVopKLdV2EdLGV0RUN1kDDNLxk7fWCcbZlDkk%3D%3A0"))()
-  end
-})
-Tab:AddButton({
-	Name = "复制猫猫脚本卡密",
-	Callback = function()
-	setclipboard("猫王")
-end
 })
