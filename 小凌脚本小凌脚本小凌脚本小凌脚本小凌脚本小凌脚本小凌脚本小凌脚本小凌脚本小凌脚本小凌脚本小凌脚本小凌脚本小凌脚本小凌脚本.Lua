@@ -5,7 +5,7 @@ CoreGui:SetCore("SendNotification", {
     Text = "加载GUI中请稍等....(反挂机必须启动!)",
     Duration = 5, 
 })
-print("反挂机")
+print("反挂机开启成功")
 		local vu = game:GetService("VirtualUser")
 		game:GetService("Players").LocalPlayer.Idled:connect(function()
 		   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
@@ -1688,45 +1688,38 @@ Tab:AddButton({
 })
 Tab:AddButton({
   Name = "刀刃球最强？",
-  Callback = function ()
-    loadstring(game:HttpGet("https://paste.gg/p/anonymous/1734a4ee207844b994df2f36157afacd/files/1e79ac12fc8a47ef8263d5e9d43b7137/raw"))()
+  Callback = function () loadstring(game:HttpGet("https://paste.gg/p/anonymous/1734a4ee207844b994df2f36157afacd/files/1e79ac12fc8a47ef8263d5e9d43b7137/raw"))()
   end
 })
 Tab:AddButton({
   Name = "刀刃球catsus",
-  Callback = function ()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/-beta-/main/AutoParry.lua"))()
+  Callback = function () loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/-beta-/main/AutoParry.lua"))()
   end
 })
 Tab:AddButton({
   Name = "刀刃球Alaxus",
-  Callback = function ()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Prymoric/Alaxus-Refinement-/main/Alaxus%20Blade%20Ball",true))()
+  Callback = function () loadstring(game:HttpGet("https://raw.githubusercontent.com/Prymoric/Alaxus-Refinement-/main/Alaxus%20Blade%20Ball",true))()
   end
 })
 Tab:AddButton({
   Name = "BF",
-  Callback = function ()
-    loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua")()
+  Callback = function () loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua")()
   end
 })
 Tab:AddButton({
   Name = "nico'Bot Dakrai-X",
-  Callback = function ()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/NicoNextBots", true))()
+  Callback = function () loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/NicoNextBots", true))()
   end
 })
 Tab:AddButton({
   Name = "丁丁脚本(免费版)",
-  Callback = function ()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/vvbnn/main/%E4%B8%81%E4%B8%81%E8%84%9A%E6%9C%AC%E9%98%89%E5%89%B2.txt"))()
+  Callback = function () loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/vvbnn/main/%E4%B8%81%E4%B8%81%E8%84%9A%E6%9C%AC%E9%98%89%E5%89%B2.txt"))()
   end
 })
 
 Tab:AddButton({
   Name = "河流脚本",
-  Callback = function ()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/AWDX-DYVB/test/main/%E6%B2%B3%E6%B5%81%E6%97%A0%E5%AF%86%E9%92%A5.lua"))()
+  Callback = function () loadstring(game:HttpGet("https://raw.githubusercontent.com/AWDX-DYVB/test/main/%E6%B2%B3%E6%B5%81%E6%97%A0%E5%AF%86%E9%92%A5.lua"))()
   end
 })
 Tab:AddButton({
@@ -1747,12 +1740,7 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://pastebin.com/raw/KwARpDxV",true))()
   end
 })
-Tab:AddButton({
-  Name = "北极豹",
-  Callback = function ()
-    loadstring(game:HttpGet("https://pastebin.com/raw/ALcnSHxe",true))()
-  end
-})
+
 Tab:AddButton({
   Name = "水下世界(可能用不了)",
   Callback = function ()
@@ -1797,8 +1785,7 @@ Tab:AddButton({
 })
 Tab:AddButton({
   Name = "猫猫脚本",
-  Callback = function ()
-    loadstring(game:HttpGet("https://ayangwp.cn/api/v3/file/get/9281/m%E8%84%9A%E6%9C%AC%E4%BA%8C%E4%BB%A3.txt?sign=JBB6aabVopKLdV2EdLGV0RUN1kDDNLxk7fWCcbZlDkk%3D%3A0"))()
+  Callback = function () loadstring(game:HttpGet("https://ayangwp.cn/api/v3/file/get/9281/m%E8%84%9A%E6%9C%AC%E4%BA%8C%E4%BB%A3.txt?sign=JBB6aabVopKLdV2EdLGV0RUN1kDDNLxk7fWCcbZlDkk%3D%3A0"))()
   end
 })
 Tab:AddButton({
