@@ -18,7 +18,7 @@ print("反挂机开启成功")
 		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
 local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/SePpsSPZ'))()
-local Window = OrionLib:MakeWindow({Name = "1.8-Script-小凌中心", HidePremium = false, SaveConfig = true,IntroText = "..game.Players.LocalPlayer.Name.. 感谢您执行小凌中心(脚本在公告下面)", ConfigFolder = "热烈欢迎"})
+local Window = OrionLib:MakeWindow({Name = "1.8-Script-小凌中心", HidePremium = false, SaveConfig = true,IntroText = "感谢您执行小凌中心(脚本在公告下面呀)", ConfigFolder = "热烈欢迎"})
 local about = Window:MakeTab({
     Name = "信息-XL",
     Icon = "rbxassetid://4483345998",
@@ -1794,6 +1794,7 @@ local about = Window:MakeTab({
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
+
 Tab:AddButton({
   Name = "普通的测试",
   Callback = function ()
