@@ -5,11 +5,7 @@ CoreGui:SetCore("SendNotification", {
     Text = "加载GUI中请稍等....(反挂机必须启动!)",
     Duration = 5, 
 })
-CoreGui:SetCore("SendNotification", {
-    Title = "GUI加载成功",
-    Text = "小凌中心？启动",
-    Duration = 5, 
-})
+
 print("反挂机")
 		local vu = game:GetService("VirtualUser")
 		game:GetService("Players").LocalPlayer.Idled:connect(function()
@@ -18,7 +14,7 @@ print("反挂机")
 		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
 local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/SePpsSPZ'))()
-local Window = OrionLib:MakeWindow({Name = "1.8-Script-小凌中心", HidePremium = false, SaveConfig = true,IntroText = "感谢您执行小凌中心(脚本在公告下面)", ConfigFolder = "热烈欢迎"})
+local Window = OrionLib:MakeWindow({Name = "1.8-Script-小凌中心", HidePremium = false, SaveConfig = true,IntroText = "GUI加载成功 感谢您执行小凌中心(脚本在公告下面)", ConfigFolder = "热烈欢迎"})
 local about = Window:MakeTab({
     Name = "信息-XL",
     Icon = "rbxassetid://4483345998",
