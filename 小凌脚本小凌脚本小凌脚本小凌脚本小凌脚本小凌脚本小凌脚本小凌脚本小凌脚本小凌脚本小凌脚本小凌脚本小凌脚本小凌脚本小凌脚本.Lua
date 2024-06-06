@@ -1788,17 +1788,516 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/vvbnn/main/%E4%B8%81%E4%B8%81%E8%84%9A%E6%9C%AC%E9%98%89%E5%89%B2.txt"))()
   end
 })
-
-local about = Window:MakeTab({
-    Name = "看看以后这更新了什么吧！",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
 Tab:AddButton({
-  Name = "普通的测试",
+  Name = "小凌飞行",
   Callback = function ()
-    
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/flyspeed7/Xiao-Ling-Fly/main/%E9%A3%9E%E5%91%80%E9%A3%9E%E5%91%80%E9%A3%9E-Xiao-Ling.Lua"))()
   end
 })
-Tab:AddParagraph("看一下测试成功吗")
+Tab:AddButton({
+  Name = "皇脚本(卡密版)",
+  Callback = function ()
+    loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\80\100\84\55\99\65\82\84"))()
+  end
+})
+Tab:AddButton({
+	Name = "复制皇脚本卡密",
+	Callback = function()
+	setclipboard("U2FsdGVkX1/gbhCW+xDOFYcV1pydxb/ni+9cAk72+WM=")
+end
+})
+Tab:AddButton({
+  Name = "建盘",
+  Callback = function ()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/manimcool21/Keyboard-FE/main/Protected%20(3).lua'),true))()
+
+  end
+})
+Tab:AddButton({
+  Name = "巨人？",
+  Callback = function ()
+    local LocalPlayer = game:GetService("Players").LocalPlayer
+local Character = LocalPlayer.Character
+local Humanoid = Character:FindFirstChildOfClass("Humanoid")
+
+function rm()
+
+for i,v in pairs(Character:GetDescendants()) do
+if v:IsA("BasePart") then
+if v.Name == "Handle" or v.Name == "Head" then
+if Character.Head:FindFirstChild("OriginalSize") then
+Character.Head.OriginalSize:Destroy()
+end
+else
+for i,cav in pairs(v:GetDescendants()) do
+if cav:IsA("Attachment") then
+if cav:FindFirstChild("OriginalPosition") then
+cav.OriginalPosition:Destroy() 
+end
+end
+end
+v:FindFirstChild("OriginalSize"):Destroy()
+if v:FindFirstChild("AvatarPartScaleType") then
+v:FindFirstChild("AvatarPartScaleType"):Destroy()
+end
+end
+end
+end
+end
+
+
+if size == 1 then
+rm()
+wait(0.5)
+Humanoid:FindFirstChild("BodyProportionScale"):Destroy()
+wait(1)
+end
+
+if size == 2 then
+rm()
+wait(0.5)
+Humanoid:FindFirstChild("BodyProportionScale"):Destroy()
+wait(1)
+
+rm()
+wait(0.5)
+Humanoid:FindFirstChild("BodyHeightScale"):Destroy()
+wait(1)
+end
+
+if size == 3 then
+rm()
+wait(0.5)
+Humanoid:FindFirstChild("BodyProportionScale"):Destroy()
+wait(1)
+
+rm()
+wait(0.5)
+Humanoid:FindFirstChild("BodyHeightScale"):Destroy()
+wait(1)
+
+rm()
+wait(0.5)
+Humanoid:FindFirstChild("BodyWidthScale"):Destroy()
+wait(1)
+end
+
+if size == 4 then
+rm()
+wait(0.5)
+Humanoid:FindFirstChild("BodyProportionScale"):Destroy()
+wait(1)
+
+rm()
+wait(0.5)
+Humanoid:FindFirstChild("BodyHeightScale"):Destroy()
+wait(1)
+
+rm()
+wait(0.5)
+Humanoid:FindFirstChild("BodyWidthScale"):Destroy()
+wait(1)
+
+rm()
+wait(0.5)
+Humanoid:FindFirstChild("BodyDepthScale"):Destroy()
+wait(1)
+end
+
+
+if size == 5 then
+rm()
+wait(0.5)
+Humanoid:FindFirstChild("BodyProportionScale"):Destroy()
+wait(1)
+
+rm()
+wait(0.5)
+Humanoid:FindFirstChild("BodyHeightScale"):Destroy()
+wait(1)
+
+rm()
+wait(0.5)
+Humanoid:FindFirstChild("BodyWidthScale"):Destroy()
+wait(1)
+
+rm()
+wait(0.5)
+Humanoid:FindFirstChild("BodyDepthScale"):Destroy()
+wait(1)
+
+rm()
+wait(0.5)
+Humanoid:FindFirstChild("HeadScale"):Destroy()
+wait(1)
+end
+
+  end
+})
+Tab:AddButton({
+  Name = "枪1",
+  Callback = function ()
+    kon=game:GetService("Players").LocalPlayer
+--kon=require(script[':flushed: magic'])
+Mouse,mouse,UserInputService,RenderStepped,Player=kon:GetMouse(),kon:GetMouse(),game:service'UserInputService',game:GetService('RunService').Heartbeat,kon
+script = game:GetObjects("rbxassetid://7109550607")[1].Convert.Extras
+GlobalFunctions = {}
+loadstring(game:HttpGet(('https://pastebin.com/raw/uq6axDFA'),true))()
+loadstring(game:GetObjects("rbxassetid://5425999987")[1].Source)()
+-- -gh 6198633506,7167966065
+-- -gh 7604371176,6202097932
+local cnnnnn = game.Players.LocalPlayer.Character
+local function gp(parent, name, className)
+	local ret = nil
+	if parent then
+		for i, v in pairs(parent:GetChildren()) do
+			if (v.Name == name) and v:IsA(className) then
+				ret = v
+			end
+		end
+	end
+	return ret
+end
+
+wait(0.2)
+player = kon
+character = player.Character
+humanoid = character:FindFirstChildOfClass("Humanoid")
+ArtificialHB = Instance.new("BindableEvent", script)
+ArtificialHB.Name = "ArtificialHB"
+frame = 1/60
+tf = 0
+allowframeloss = false
+tossremainder = false
+lastframe = tick()
+ArtificialHB:Fire()
+game:GetService("RunService").Heartbeat:connect(function(s, p)
+	tf = tf + s
+	if tf >= frame then
+		if allowframeloss then
+			ArtificialHB:Fire()
+			lastframe = tick()
+		else
+			for i = 1, math.floor(tf / frame) do
+				ArtificialHB:Fire()
+			end
+			lastframe = tick()
+		end
+		if tossremainder then
+			tf = 0
+		else
+			tf = tf - frame * math.floor(tf / frame)
+		end
+	end
+end)
+function swait(num)
+	if num==0 or num==nil then
+		ArtificialHB.Event:wait()
+	else
+		for i=0,num do
+			ArtificialHB.Event:wait()
+		end
+	end
+end
+function CreateSound(ID, PARENT, VOLUME, PITCH, DOESLOOP)
+	local NEWSOUND = nil
+	coroutine.resume(coroutine.create(function()
+		NEWSOUND = Instance.new("Sound")
+		NEWSOUND.Parent = PARENT
+		NEWSOUND.Volume = VOLUME
+		NEWSOUND.Pitch = PITCH
+		NEWSOUND.SoundId = "rbxassetid://"..ID
+		NEWSOUND:play()
+		if DOESLOOP == true then
+			NEWSOUND.Looped = true
+		else
+			repeat wait(1) until NEWSOUND.Playing == false
+			NEWSOUND:remove()
+		end
+	end))
+	return NEWSOUND
+end
+function sandbox(var,func)
+	local env = getfenv(func)
+	local newenv = setmetatable({},{
+		__index = function(self,k)
+			if k=="script" then
+				return var
+			else
+				return env[k]
+			end
+		end,
+	})
+	setfenv(func,newenv)
+	return func
+end
+cors = {}
+mas = Instance.new("Model",game:GetService("Lighting"))
+Part0 = Instance.new("Part")
+SpecialMesh1 = Instance.new("SpecialMesh")
+Part0.Name = "Gun"
+Part0.Parent = mas
+Part0.CanCollide = false
+Part0.Size = Vector3.new(0.970000505, 2.46999931, 0.380000055)
+Part0.CFrame = CFrame.new(-211.74501, 2.6168952, 37.920002, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Part0.Position = Vector3.new(-211.74501, 2.6168952, 37.920002)
+
+local pistolhat = gp(gp(gp(cnnnnn, "Meshes/恶魔枪Accessory", "Accessory"), "Handle", "BasePart"), "att1_Handle", "Attachment")
+local pistolnnn = gp(gp(cnnnnn, "Meshes/恶魔枪Accessory", "Accessory"), "Handle", "BasePart")
+
+pistolhat.Parent = Part0
+pistolhat.Orientation = Vector3.new(-70, -90, -180)
+pistolhat.Position = Vector3.new(-0.3, -0.3, 0)
+SpecialMesh1.Parent = Part0
+SpecialMesh1.MeshId = "rbxassetid://505563629"
+SpecialMesh1.Scale = Vector3.new(0.00499999989, 0.00499999989, 0.00499999989)
+SpecialMesh1.TextureId = "rbxassetid://505563636"
+SpecialMesh1.MeshType = Enum.MeshType.FileMesh
+SpecialMesh1.Scale = Vector3.new(0.00499999989, 0.00499999989, 0.00499999989)
+for i,v in pairs(mas:GetChildren()) do
+	v.Parent = character
+	pcall(function() v:MakeJoints() end)
+end
+mas:Destroy()
+for i,v in pairs(cors) do
+	spawn(function()
+		pcall(v)
+	end)
+end
+cankys = true
+weld = Instance.new("Weld", Part0)
+weld.Part0 = character["Left Arm"]
+weld.Part1 = Part0
+weld.C0 = CFrame.new(0.158004761, -1.63815379, -1.00455856, -5.79879307e-22, 9.29214533e-23, 1, -0.587791622, -0.809012473, -2.65673535e-22, 0.809012473, -0.587791622, 5.23747954e-22)
+function killyourself(key)
+	if cankys then
+		cankys = false
+		CreateSound(204037214,Part0,1,1,false)
+		local rhandweld = Instance.new("Weld", character.Torso)
+		rhandweld.Part0 = character.Torso
+		rhandweld.Part1 = character["Right Arm"]
+		rhandweld.C0 = CFrame.new(1.5, 0, 0, 1, -1.6395192e-43, 0, -1.6395192e-43, 1, 0, 0, 0, 1)
+		local lhandweld = Instance.new("Weld", character.Torso)
+		lhandweld.Part0 = character.Torso
+		lhandweld.Part1 = character["Left Arm"]
+		lhandweld.C0 = CFrame.new(-1.5, 0, 0, 1, -1.6395192e-43, 0, -1.6395192e-43, 1, 0, 0, 0, 1)
+		for i = 0,2 , 0.02 do
+			weld.C0 = weld.C0:lerp(CFrame.new(0.720336914, -0.258590698, -0.514060974, 0.409927189, 0.572569966, -0.710018694, 0.0567400455, 0.760912359, 0.646370947, 0.910354853, -0.305250764, 0.279430419),i)
+			lhandweld.C0 = lhandweld.C0:lerp(CFrame.new(-0.832244873, 0.405325174, -1.44667816, 0.719340205, -0.634600103, -0.28254649, -0.214658037, 0.183768019, -0.959245205, 0.660660148, 0.750674427, -0.00403028121),i)
+			rhandweld.C0 = rhandweld.C0:lerp(CFrame.new(0.921920776, 0.294008493, -1.1861496, 0.88295126, 0.469464868, 6.12843053e-07, -0.0490720123, 0.0922940373, -0.994521856, -0.466893107, 0.878114343, 0.104528703),i)
+			swait()
+		end
+		CreateSound(5213779561,Part0,1,1,false)
+		--while true do
+			swait()
+			character:BreakJoints()
+			humanoid.Health = 0
+		--end
+	end
+end
+mouse.Button1Down:connect(killyourself)
+  end
+})
+Tab:AddButton({
+  Name = "人体直升机",
+  Callback = function ()
+    if game.Players.LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+spawn(function()
+local speaker = game.Players.LocalPlayer
+local Anim = Instance.new("Animation")
+     Anim.AnimationId = "rbxassetid://27432686"
+     local bruh = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+bruh:Play()
+bruh:AdjustSpeed(0)
+speaker.Character.Animate.Disabled = true
+local hi = Instance.new("Sound")
+hi.Name = "Sound"
+hi.SoundId = "http://www.roblox.com/asset/?id=165113352"
+hi.Volume = 2
+hi.Looped = true
+hi.archivable = false
+hi.Parent = game.Workspace
+hi:Play()
+
+local spinSpeed = 40
+local Spin = Instance.new("BodyAngularVelocity")
+Spin.Name = "Spinning"
+Spin.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
+Spin.MaxTorque = Vector3.new(0, math.huge, 0)
+Spin.AngularVelocity = Vector3.new(0,spinSpeed,0)
+
+end)
+else
+spawn(function()
+local speaker = game.Players.LocalPlayer
+local Anim = Instance.new("Animation")
+     Anim.AnimationId = "rbxassetid://507776043"
+     local bruh = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+bruh:Play()
+bruh:AdjustSpeed(0)
+speaker.Character.Animate.Disabled = true
+local hi = Instance.new("Sound")
+hi.Name = "Sound"
+hi.SoundId = "http://www.roblox.com/asset/?id=165113352"
+hi.Volume = 2
+hi.Looped = true
+hi.archivable = false
+hi.Parent = game.Workspace
+hi:Play()
+
+local spinSpeed = 40
+local Spin = Instance.new("BodyAngularVelocity")
+Spin.Name = "Spinning"
+Spin.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
+Spin.MaxTorque = Vector3.new(0, math.huge, 0)
+Spin.AngularVelocity = Vector3.new(0,spinSpeed,0)
+
+
+end)    
+end
+local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
+local u = game.Players.LocalPlayer
+local urchar = u.Character
+
+task.spawn(function()
+
+
+qUp = Mouse.KeyUp:Connect(function(KEY)
+if KEY == 'q' then
+urchar.Humanoid.HipHeight = urchar.Humanoid.HipHeight - 3
+end
+end)
+eUp = Mouse.KeyUp:Connect(function(KEY)
+if KEY == 'e' then
+urchar.Humanoid.HipHeight = urchar.Humanoid.HipHeight + 3
+end
+end)
+
+
+end)
+  end
+})
+Tab:AddButton({
+  Name = "自然灾难",
+  Callback = function ()
+    loadstring(game:HttpGet("https://gist.githubusercontent.com/TurkOyuncu99/7c75386107937fa006304efd24543ad4/raw/8d759dfcd95d39949c692735cfdf62baec0bf835/cafwetweg", true))()
+  end
+})
+Tab:AddButton({
+  Name = "黑洞2",
+  Callback = function ()
+    local UserInputService = game:GetService("UserInputService")
+local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
+local Folder = Instance.new("Folder", game:GetService("Workspace"))
+local Part = Instance.new("Part", Folder)
+local Attachment1 = Instance.new("Attachment", Part)
+Part.Anchored = true
+Part.CanCollide = false
+Part.Transparency = 1
+local Updated = Mouse.Hit + Vector3.new(0, 5, 0)
+local NetworkAccess = coroutine.create(function()
+    settings().Physics.AllowSleep = false
+    while game:GetService("RunService").RenderStepped:Wait() do
+        for _, Players in next, game:GetService("Players"):GetPlayers() do
+            if Players ~= game:GetService("Players").LocalPlayer then
+                Players.MaximumSimulationRadius = 0 
+                sethiddenproperty(Players, "SimulationRadius", 0) 
+            end 
+        end
+        game:GetService("Players").LocalPlayer.MaximumSimulationRadius = math.pow(math.huge,math.huge)
+        setsimulationradius(math.huge) 
+    end 
+end) 
+coroutine.resume(NetworkAccess)
+local function ForcePart(v)
+    if v:IsA("Part") and v.Anchored == false and v.Parent:FindFirstChild("Humanoid") == nil and v.Parent:FindFirstChild("Head") == nil and v.Name ~= "Handle" then
+        Mouse.TargetFilter = v
+        for _, x in next, v:GetChildren() do
+            if x:IsA("BodyAngularVelocity") or x:IsA("BodyForce") or x:IsA("BodyGyro") or x:IsA("BodyPosition") or x:IsA("BodyThrust") or x:IsA("BodyVelocity") or x:IsA("RocketPropulsion") then
+                x:Destroy()
+            end
+        end
+        if v:FindFirstChild("Attachment") then
+            v:FindFirstChild("Attachment"):Destroy()
+        end
+        if v:FindFirstChild("AlignPosition") then
+            v:FindFirstChild("AlignPosition"):Destroy()
+        end
+        if v:FindFirstChild("Torque") then
+            v:FindFirstChild("Torque"):Destroy()
+        end
+        v.CanCollide = false
+        local Torque = Instance.new("Torque", v)
+        Torque.Torque = Vector3.new(100000, 100000, 100000)
+        local AlignPosition = Instance.new("AlignPosition", v)
+        local Attachment2 = Instance.new("Attachment", v)
+        Torque.Attachment0 = Attachment2
+        AlignPosition.MaxForce = 9999999999999999
+        AlignPosition.MaxVelocity = math.huge
+        AlignPosition.Responsiveness = 200
+        AlignPosition.Attachment0 = Attachment2 
+        AlignPosition.Attachment1 = Attachment1
+    end
+end
+for _, v in next, game:GetService("Workspace"):GetDescendants() do
+    ForcePart(v)
+end
+game:GetService("Workspace").DescendantAdded:Connect(function(v)
+    ForcePart(v)
+end)
+UserInputService.InputBegan:Connect(function(Key, Chat)
+    if Key.KeyCode == Enum.KeyCode.E and not Chat then
+       Updated = Mouse.Hit + Vector3.new(0, 5, 0)
+    end
+end)
+spawn(function()
+    while game:GetService("RunService").RenderStepped:Wait() do
+        Attachment1.WorldCFrame = Updated
+    end
+end)
+  end
+})
+Tab:AddButton({
+  Name = "大炮",
+  Callback = function ()
+    loadstring(game:HttpGet(("https://gist.githubusercontent.com/redmoons1/4ae7d132cdfe8dba6ab2081e38ca1f8b/raw/ca9b6c1b2bad7589bad72aeaec720ad18890b702/rocket%2520launcher"),true))()
+  end
+})
+Tab:AddButton({
+  Name = "Tian脚本(白明单)",
+  Callback = function ()
+  LAT = "QQ3422265683" TianV1QQqun= "495186854" 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1QQqun495186854"))()  
+  end
+})
+Tab:AddButton({
+  Name = "武脚本",
+  Callback = function ()
+    loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\66\73\78\106\105\97\111\98\122\120\54\47\66\73\78\106\105\97\111\47\109\97\105\110\47\50\46\108\117\97\34\41\41\40\41\10")()
+  end
+})
+Tab:AddButton({
+  Name = "甩飞人",
+  Callback = function ()
+    loadstring(game:HttpGet("https://xn--9p9haaaaaa.tk/scripts/CarpetFling.lua"))()
+
+  end
+})
+ǿC  Tab:AddButton({
+  Name = "BF-免费",
+  Callback = function ()
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua")()
+  end
+})
+Tab:AddButton({
+  Name = "空脚本",
+  Callback = function ()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/%E7%A9%BA%E8%84%9A%E6%9C%AC666.txt"))()
+  end
+})
+Tab:AddButton({
+  Name = "最强的战场",
+  Callback = function ()
+    loadstring(Game:HttpGet("https://pastefy.app/oKLqVHKF/raw"))()
+  end
+})
