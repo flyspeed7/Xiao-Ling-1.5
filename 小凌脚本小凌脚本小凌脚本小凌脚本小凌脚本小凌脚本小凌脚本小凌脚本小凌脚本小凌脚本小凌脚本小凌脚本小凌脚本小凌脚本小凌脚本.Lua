@@ -1,12 +1,12 @@
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
-    Title = "小凌中心-1.9",
+    Title = "☯︎小凌中心-1.9☯︎",
     Text = "加载GUI中请稍等....(反挂机必须启动!)",
     Duration = 5, 
 })
 CoreGui:SetCore("SendNotification", {
-    Title = "加载GUI成功",
+    Title = "�加载GUI成功�",
     Text = "正在打开UI",
     Duration = 5, 
 })
@@ -1822,5 +1822,11 @@ Tab:AddButton({
   Callback = function () loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\66\73\78\106\105\97\111\98\122\120\54\47\66\73\78\106\105\97\111\47\109\97\105\110\47\50\46\108\117\97\34\41\41\40\41\10")()
   end
 })
-Tab:AddParagraph("小凌中心在3天内不会更新了")
-Tab:AddParagraph("希望大家见料")
+Tab:AddParagraph("骗你的")
+Tab:AddParagraph("每天一更")
+Tab:AddButton({
+  Name = "☯︎退休脚本☯︎",
+  Callback = function ()
+    TUIXUI="作者退休☯︎"JIAOBEN="永久免费缝合"qun="809771141"loadstring(game:HttpGet("https://pastebin.com/raw/yPhwFHy4"))()
+  end
+})
