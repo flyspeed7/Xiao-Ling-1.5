@@ -1,13 +1,18 @@
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
-    Title = "小凌中心-1.8",
+    Title = "小凌中心-1.9",
     Text = "加载GUI中请稍等....(反挂机必须启动!)",
     Duration = 5, 
 })
 CoreGui:SetCore("SendNotification", {
     Title = "加载GUI成功",
     Text = "正在打开UI",
+    Duration = 5, 
+})
+CoreGui:SetCore("SendNotification", {
+    Title = "你好陌生人小凌中心这3天内不会更新了",
+    Text = "一个不好的消息👍",
     Duration = 5, 
 })
 print("反挂机开启成功")
