@@ -18,7 +18,7 @@ print("反挂机开启成功")
 		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
 local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/SePpsSPZ'))()
-local Window = OrionLib:MakeWindow({Name = "1.8-Script-小凌中心", HidePremium = false, SaveConfig = true,IntroText = "感谢您执行小凌中心(脚本在公告下面呀)", ConfigFolder = "热烈欢迎"})
+local Window = OrionLib:MakeWindow({Name = "⭐1.9-Script-小凌中心⭐", HidePremium = false, SaveConfig = true,IntroText = "⭐感谢您执行小凌中心(脚本在公告下面)⭐", ConfigFolder = "你好，我xiaoling啊"})
 local about = Window:MakeTab({
     Name = "信息-XL",
     Icon = "rbxassetid://4483345998",
@@ -1814,6 +1814,11 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main
 })
 Tab:AddButton({
   Name = "不知名",
+  Callback = function () loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\66\73\78\106\105\97\111\98\122\120\54\47\66\73\78\106\105\97\111\47\109\97\105\110\47\50\46\108\117\97\34\41\41\40\41\10")()
+  end
+})
+Tab:AddButton({
+  Name = "武脚本",
   Callback = function () loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\66\73\78\106\105\97\111\98\122\120\54\47\66\73\78\106\105\97\111\47\109\97\105\110\47\50\46\108\117\97\34\41\41\40\41\10")()
   end
 })
