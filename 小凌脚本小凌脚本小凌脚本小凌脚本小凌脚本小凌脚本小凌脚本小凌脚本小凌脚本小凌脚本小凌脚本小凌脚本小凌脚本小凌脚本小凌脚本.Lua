@@ -10,11 +10,6 @@ CoreGui:SetCore("SendNotification", {
     Text = "正在打开UI",
     Duration = 5, 
 })
-CoreGui:SetCore("SendNotification", {
-    Title = "你好陌生人小凌中心这3天内不会更新了",
-    Text = "一个不好的消息👍",
-    Duration = 5, 
-})
 print("反挂机开启成功")
 		local vu = game:GetService("VirtualUser")
 		game:GetService("Players").LocalPlayer.Idled:connect(function()
@@ -1794,7 +1789,13 @@ Tab:AddButton({
   end
 })
 Tab:AddButton({
-  Name = "皇脚本(卡密版)",
+  Name = "空脚本",
+  Callback = function ()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/%E7%A9%BA%E8%84%9A%E6%9C%AC666.txt"))()
+  end
+})
+Tab:AddButton({
+  Name = "皇脚本",
   Callback = function ()
     loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\80\100\84\55\99\65\82\84"))()
   end
@@ -1806,60 +1807,15 @@ Tab:AddButton({
 end
 })
 Tab:AddButton({
-  Name = "建盘",
+  Name = "Tian脚本(需要白名单)",
   Callback = function ()
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/manimcool21/Keyboard-FE/main/Protected%20(3).lua'),true))()
-
-  end
-})
-
-Tab:AddButton({
-  Name = "自然灾难",
-  Callback = function ()
-    loadstring(game:HttpGet("https://gist.githubusercontent.com/TurkOyuncu99/7c75386107937fa006304efd24543ad4/raw/8d759dfcd95d39949c692735cfdf62baec0bf835/cafwetweg", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1QQqun495186854"))()
   end
 })
 Tab:AddButton({
-  Name = "???",
-  Callback = function ()
-    loadstring(game:HttpGet(("https://gist.githubusercontent.com/redmoons1/4ae7d132cdfe8dba6ab2081e38ca1f8b/raw/ca9b6c1b2bad7589bad72aeaec720ad18890b702/rocket%2520launcher"),true))()
+  Name = "不知名",
+  Callback = function () loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\66\73\78\106\105\97\111\98\122\120\54\47\66\73\78\106\105\97\111\47\109\97\105\110\47\50\46\108\117\97\34\41\41\40\41\10")()
   end
 })
-Tab:AddButton({
-  Name = "Tian脚本(白明单)",
-  Callback = function ()
-  LAT = "QQ3422265683" TianV1QQqun= "495186854" 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1QQqun495186854"))()  
-  end
-})
-Tab:AddButton({
-  Name = "武脚本",
-  Callback = function ()
-    loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\66\73\78\106\105\97\111\98\122\120\54\47\66\73\78\106\105\97\111\47\109\97\105\110\47\50\46\108\117\97\34\41\41\40\41\10")()
-  end
-})
-Tab:AddButton({
-  Name = "甩飞人",
-  Callback = function ()
-    loadstring(game:HttpGet("https://xn--9p9haaaaaa.tk/scripts/CarpetFling.lua"))()
-
-  end
-})
-ǿC  Tab:AddButton({
-  Name = "BF-免费",
-  Callback = function ()
-    loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua")()
-  end
-})
-Tab:AddButton({
-  Name = "空脚本",
-  Callback = function ()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/%E7%A9%BA%E8%84%9A%E6%9C%AC666.txt"))()
-  end
-})
-Tab:AddButton({
-  Name = "最强的战场",
-  Callback = function ()
-    loadstring(Game:HttpGet("https://pastefy.app/oKLqVHKF/raw"))()
-  end
-})
+Tab:AddParagraph("小凌中心在3天内不会更新了")
+Tab:AddParagraph("希望大家见料")
