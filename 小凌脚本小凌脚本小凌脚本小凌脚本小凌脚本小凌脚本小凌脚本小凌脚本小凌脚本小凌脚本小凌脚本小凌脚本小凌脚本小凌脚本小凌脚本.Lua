@@ -1789,12 +1789,6 @@ Tab:AddButton({
   end
 })
 Tab:AddButton({
-  Name = "小凌飞行",
-  Callback = function ()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/flyspeed7/Xiao-Ling-Fly/main/%E9%A3%9E%E5%91%80%E9%A3%9E%E5%91%80%E9%A3%9E-Xiao-Ling.Lua"))()
-  end
-})
-Tab:AddButton({
   Name = "皇脚本(卡密版)",
   Callback = function ()
     loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\80\100\84\55\99\65\82\84"))()
@@ -1821,81 +1815,7 @@ Tab:AddButton({
   end
 })
 Tab:AddButton({
-  Name = "黑洞2",
-  Callback = function ()
-    local UserInputService = game:GetService("UserInputService")
-local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
-local Folder = Instance.new("Folder", game:GetService("Workspace"))
-local Part = Instance.new("Part", Folder)
-local Attachment1 = Instance.new("Attachment", Part)
-Part.Anchored = true
-Part.CanCollide = false
-Part.Transparency = 1
-local Updated = Mouse.Hit + Vector3.new(0, 5, 0)
-local NetworkAccess = coroutine.create(function()
-    settings().Physics.AllowSleep = false
-    while game:GetService("RunService").RenderStepped:Wait() do
-        for _, Players in next, game:GetService("Players"):GetPlayers() do
-            if Players ~= game:GetService("Players").LocalPlayer then
-                Players.MaximumSimulationRadius = 0 
-                sethiddenproperty(Players, "SimulationRadius", 0) 
-            end 
-        end
-        game:GetService("Players").LocalPlayer.MaximumSimulationRadius = math.pow(math.huge,math.huge)
-        setsimulationradius(math.huge) 
-    end 
-end) 
-coroutine.resume(NetworkAccess)
-local function ForcePart(v)
-    if v:IsA("Part") and v.Anchored == false and v.Parent:FindFirstChild("Humanoid") == nil and v.Parent:FindFirstChild("Head") == nil and v.Name ~= "Handle" then
-        Mouse.TargetFilter = v
-        for _, x in next, v:GetChildren() do
-            if x:IsA("BodyAngularVelocity") or x:IsA("BodyForce") or x:IsA("BodyGyro") or x:IsA("BodyPosition") or x:IsA("BodyThrust") or x:IsA("BodyVelocity") or x:IsA("RocketPropulsion") then
-                x:Destroy()
-            end
-        end
-        if v:FindFirstChild("Attachment") then
-            v:FindFirstChild("Attachment"):Destroy()
-        end
-        if v:FindFirstChild("AlignPosition") then
-            v:FindFirstChild("AlignPosition"):Destroy()
-        end
-        if v:FindFirstChild("Torque") then
-            v:FindFirstChild("Torque"):Destroy()
-        end
-        v.CanCollide = false
-        local Torque = Instance.new("Torque", v)
-        Torque.Torque = Vector3.new(100000, 100000, 100000)
-        local AlignPosition = Instance.new("AlignPosition", v)
-        local Attachment2 = Instance.new("Attachment", v)
-        Torque.Attachment0 = Attachment2
-        AlignPosition.MaxForce = 9999999999999999
-        AlignPosition.MaxVelocity = math.huge
-        AlignPosition.Responsiveness = 200
-        AlignPosition.Attachment0 = Attachment2 
-        AlignPosition.Attachment1 = Attachment1
-    end
-end
-for _, v in next, game:GetService("Workspace"):GetDescendants() do
-    ForcePart(v)
-end
-game:GetService("Workspace").DescendantAdded:Connect(function(v)
-    ForcePart(v)
-end)
-UserInputService.InputBegan:Connect(function(Key, Chat)
-    if Key.KeyCode == Enum.KeyCode.E and not Chat then
-       Updated = Mouse.Hit + Vector3.new(0, 5, 0)
-    end
-end)
-spawn(function()
-    while game:GetService("RunService").RenderStepped:Wait() do
-        Attachment1.WorldCFrame = Updated
-    end
-end)
-  end
-})
-Tab:AddButton({
-  Name = "大炮",
+  Name = "???",
   Callback = function ()
     loadstring(game:HttpGet(("https://gist.githubusercontent.com/redmoons1/4ae7d132cdfe8dba6ab2081e38ca1f8b/raw/ca9b6c1b2bad7589bad72aeaec720ad18890b702/rocket%2520launcher"),true))()
   end
