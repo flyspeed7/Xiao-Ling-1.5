@@ -1,3 +1,18 @@
+local bindable = Instance.new("BindableFunction")
+bindable.OnInvoke = function(button)
+print("1")
+end
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "已经为你打开反挂机",
+    Text = "谢谢小凌中心",
+    Icon = "rbxassetid://3926305904",
+    Duration = 60,
+    Callback = bindable,
+    Button1 = "没问题",
+    Button2 = "我不开"
+})
+
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
@@ -6,7 +21,7 @@ CoreGui:SetCore("SendNotification", {
     Duration = 5, 
 })
 CoreGui:SetCore("SendNotification", {
-    Title = "✄加载GUI成功",
+    Title = "加载GUI成功",
     Text = "正在打开UI",
     Duration = 5, 
 })
@@ -18,7 +33,7 @@ print("反挂机开启成功")
 		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
 local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/SePpsSPZ'))()
-local Window = OrionLib:MakeWindow({Name = "☸1.9-Script-小凌中心☸", HidePremium = false, SaveConfig = true,IntroText = "░感谢您执行小凌中心(脚本在公告下面)░", ConfigFolder = "你好，我xiaoling啊"})
+local Window = OrionLib:MakeWindow({Name = "☸1.9-Script-小凌中心☸", HidePremium = false, SaveConfig = true,IntroText = "感谢您执行小凌中心(脚本在公告下面)", ConfigFolder = "你好，我xiaoling啊"})
 local about = Window:MakeTab({
     Name = "₪信息",
     Icon = "rbxassetid://4483345998",
@@ -34,7 +49,7 @@ local Tab = Window:MakeTab({
   })
   
  Tab:AddButton({
-	Name = "☤K1S(落叶中心)",
+	Name = "₪K1S(落叶中心)",
 	Callback = function()
 getgenv().LS="落叶中心"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/krlpl/Deciduous-center-LS/main/%E8%90%BD%E5%8F%B6%E4%B8%AD%E5%BF%83%E6%B7%B7%E6%B7%86.txt"))()
