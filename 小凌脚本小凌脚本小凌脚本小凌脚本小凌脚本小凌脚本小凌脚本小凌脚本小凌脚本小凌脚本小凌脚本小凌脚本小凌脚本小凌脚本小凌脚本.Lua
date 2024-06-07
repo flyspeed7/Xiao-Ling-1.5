@@ -57,13 +57,6 @@ end
 })
 
 Tab:AddButton({
-  Name = "关闭反挂机",
-  Callback = function ()
-    game.Players.LocalPlayer:Kick('You Were Forced to Quit the Game Because You Used the Actuator')
-  end
-})
-
-Tab:AddButton({
 	Name = "飞行装备（可控制物体）",
 	Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/zaochuan2"))()		
@@ -605,15 +598,15 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
-  Name = "离开",
+  Name = "关反挂机",
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
   })
 
 Tab:AddButton({
-	Name = "点我",
+	Name = "点我关",
 	Callback = function()
-game.Players.LocalPlayer:Kick('ok')
+game.Players.LocalPlayer:Kick('Because you used the actuator, you were forced to quit the game')
 end
 })
 
