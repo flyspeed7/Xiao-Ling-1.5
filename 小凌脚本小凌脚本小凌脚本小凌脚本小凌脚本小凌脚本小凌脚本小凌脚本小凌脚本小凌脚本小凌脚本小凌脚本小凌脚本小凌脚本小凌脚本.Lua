@@ -1,12 +1,12 @@
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
-    Title = "☯︎小凌中心-1.9☯︎",
+    Title = "◈小凌中心-1.9◈",
     Text = "加载GUI中请稍等....(反挂机必须启动!)",
     Duration = 5, 
 })
 CoreGui:SetCore("SendNotification", {
-    Title = "�加载GUI成功�",
+    Title = "✄加载GUI成功",
     Text = "正在打开UI",
     Duration = 5, 
 })
@@ -18,9 +18,9 @@ print("反挂机开启成功")
 		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
 local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/SePpsSPZ'))()
-local Window = OrionLib:MakeWindow({Name = "⭐1.9-Script-小凌中心⭐", HidePremium = false, SaveConfig = true,IntroText = "⭐感谢您执行小凌中心(脚本在公告下面)⭐", ConfigFolder = "你好，我xiaoling啊"})
+local Window = OrionLib:MakeWindow({Name = "☸1.9-Script-小凌中心☸", HidePremium = false, SaveConfig = true,IntroText = "░感谢您执行小凌中心(脚本在公告下面)░", ConfigFolder = "你好，我xiaoling啊"})
 local about = Window:MakeTab({
-    Name = "信息-XL",
+    Name = "₪信息",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
@@ -28,13 +28,13 @@ about:AddParagraph("您的用户名:"," "..game.Players.LocalPlayer.Name.."")
 about:AddParagraph("您的注入器:"," "..identifyexecutor().."")
 about:AddParagraph("您当前服务器的ID"," "..game.GameId.."")
 local Tab = Window:MakeTab({
-  Name = "通用-XL",
+  Name = "₪通用",
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
   })
   
  Tab:AddButton({
-	Name = "K1S(落叶中心)",
+	Name = "☤K1S(落叶中心)",
 	Callback = function()
 getgenv().LS="落叶中心"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/krlpl/Deciduous-center-LS/main/%E8%90%BD%E5%8F%B6%E4%B8%AD%E5%BF%83%E6%B7%B7%E6%B7%86.txt"))()
@@ -300,7 +300,7 @@ end
 })
 
 local Tab = Window:MakeTab({
-  Name = "极速传奇-XL",
+  Name = "₪极速传奇",
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
   })
@@ -313,7 +313,7 @@ local Tab = Window:MakeTab({
 })
 
 local Tab = Window:MakeTab({
-  Name = "脚本中心-XL",
+  Name = "₪脚本中心",
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
   })
@@ -326,7 +326,7 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
-	Name = "DOORS-XL",
+	Name = "₪DOORS",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -418,7 +418,7 @@ Tab:AddButton({
     end
 })  
 local Tab = Window:MakeTab({
-  Name = "国王遗产-XL",
+  Name = "₪国王遗产",
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
   })
@@ -459,7 +459,7 @@ end
 })
 
 local Tab = Window:MakeTab({
-	Name = "脚本区-XL",
+	Name = "₪脚本区",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -502,7 +502,7 @@ Tab:AddButton({
     getgenv().USA="作者莫羽免费请勿倒卖"loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/beta/main/USA.lua"))()
    end
 })local Tab = Window:MakeTab({
-	Name = "脚本大全-XL",
+	Name = "₪脚本大全",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -561,7 +561,7 @@ end
 })
 
 local Tab = Window:MakeTab({
-  Name = "鲨口求生2-XL",
+  Name = "₪鲨口求生",
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
   })
@@ -583,20 +583,20 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
-  Name = "好玩的",
+  Name = "离开",
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
   })
 
 Tab:AddButton({
-	Name = "非常好玩千万别点",
+	Name = "点我",
 	Callback = function()
-game.Players.LocalPlayer:Kick('都说了太好玩了')
+game.Players.LocalPlayer:Kick('ok')
 end
 })
 
 local Tab = Window:MakeTab({
-    Name = "监狱人生",
+    Name = " ₪监狱人生",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
@@ -630,7 +630,7 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
-  Name = "脚本大全2",
+  Name = "₪脚本大全2",
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
   })
@@ -706,7 +706,7 @@ Tab:AddButton({
 })
 
 local player = Window:MakeTab({
-	Name = "能力大战",
+	Name = "₪能力大战",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -719,7 +719,7 @@ player:AddButton({
 })
 
 local player = Window:MakeTab({
-	Name = "Piggy",
+	Name = "₪Piggy",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -732,7 +732,7 @@ player:AddButton({
 })
 
 local player = Window:MakeTab({
-	Name = "视觉",
+	Name = "₪视觉",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -788,7 +788,7 @@ player:AddButton({
 })
 
 local Tab = Window:MakeTab({
-	Name = "RobloxUI",
+	Name = "₪RobloxUI",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -808,7 +808,7 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
-    Name = "伐木脚本",
+    Name = "₪伐木脚本",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -821,7 +821,7 @@ Tab:AddButton({
       })
 
 local Tab = Window:MakeTab({
-	Name = "通用2",
+	Name = "₪通用2",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -893,7 +893,7 @@ end
 })    
 
 local Tab = Window:MakeTab({
-	Name = "FE脚本",
+	Name = "₪FE脚本",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -923,7 +923,7 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
-  Name = "FE变身脚本",
+  Name = "₪FE变身脚本",
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
   })
@@ -1034,7 +1034,7 @@ end
 })
 
 local Tab = Window:MakeTab({
-  Name = "私人定制脚本",
+  Name = "₪定制脚本",
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
   })
@@ -1060,7 +1060,7 @@ end
 })
 
 local Tab = Window:MakeTab({
-	Name = "doors2",
+	Name = "₪doors2",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -1073,7 +1073,7 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
-  Name = "DOORS娱乐十字架(只对自己召唤的怪有用)",
+  Name = "₪DOORS娱乐十字架(只对自己召唤的怪有用)",
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
 })
@@ -1114,7 +1114,7 @@ Tab:AddButton({
   end
 })
 
-local Tab = Window:MakeTab({	Name = "公告/新的脚本在下面",	Icon = "rbxassetid://7734068321",	PremiumOnly = false})
+local Tab = Window:MakeTab({	Name = "₪公告/新的脚本在下面",	Icon = "rbxassetid://7734068321",	PremiumOnly = false})
 Tab:AddButton({
 	Name = "缝合！",
 	Callback = function()
