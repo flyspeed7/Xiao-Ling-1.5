@@ -9,15 +9,17 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
     Icon = "rbxassetid://3926305904",
     Duration = 60,
     Callback = bindable,
-    Button1 = "没问题",
-    Button2 = "我不开"
+    Button1 = "滚 我不开",
+    game.Players.LocalPlayer:Kick('Your to Executer
+ MyGameWe'D ike to Ask you to Yo out!')
+    Button2 = "没问题"
 })
 
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
     Title = "◈小凌中心-1.9◈",
-    Text = "加载GUI中请稍等....(反挂机必须启动!)",
+    Text = "加载GUI中请稍等....(反挂机？启动！)",
     Duration = 5, 
 })
 CoreGui:SetCore("SendNotification", {
