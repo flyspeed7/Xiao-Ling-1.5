@@ -10,8 +10,6 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
     Duration = 60,
     Callback = bindable,
     Button1 = "滚 我不开",
-    game.Players.LocalPlayer:Kick('Your to Executer
- MyGameWe'D ike to Ask you to Yo out!')
     Button2 = "没问题"
 })
 
@@ -56,6 +54,13 @@ local Tab = Window:MakeTab({
 getgenv().LS="落叶中心"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/krlpl/Deciduous-center-LS/main/%E8%90%BD%E5%8F%B6%E4%B8%AD%E5%BF%83%E6%B7%B7%E6%B7%86.txt"))()
 end
+})
+
+Tab:AddButton({
+  Name = "关闭反挂机",
+  Callback = function ()
+    game.Players.LocalPlayer:Kick('You Were Forced to Quit the Game Because You Used the Actuator')
+  end
 })
 
 Tab:AddButton({
