@@ -1864,3 +1864,20 @@ Tab:AddButton({
   end
 })
 Tab:AddParagraph("666666小凌是缝合王")
+
+local Tab= Window:MakeTab({
+	Name = "杂牌脚本",
+	Icon = "rbxassetid://7733779610",
+	PremiumOnly = false
+})
+Tab:AddButton({
+  Name = "陈脚本",
+  Callback = function () loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\81\120\68\68\57\83\112\87\34\41\41\40\41")()
+  end
+})
+Tab:AddButton({
+  Name = "导管中心无需协议👍",
+  Callback = function ()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/useranewrff/roblox-/main/%E5%AF%BC%E7%AE%A1%E6%B7%B7%E6%B7%86.lua"))() 
+  end
+})
