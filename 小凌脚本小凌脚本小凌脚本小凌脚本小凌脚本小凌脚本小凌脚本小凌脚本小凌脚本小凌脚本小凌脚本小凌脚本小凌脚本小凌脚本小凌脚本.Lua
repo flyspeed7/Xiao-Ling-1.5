@@ -1,16 +1,29 @@
+notifications:notify{
+            Title = "小凌中心",
+            Description = "已开启反AFK",
+            Icon = 6031302918,
+            Accept = {
+                Text = "知道了",
+                Callback = function()
+                    print("!!!")
+                end
+            },
+            Length = 30
+        }
+       
 local bindable = Instance.new("BindableFunction")
 bindable.OnInvoke = function(button)
 print("1")
 end
 
 game:GetService("StarterGui"):SetCore("SendNotification",{
-    Title = "已经为你打开反挂机",
-    Text = "谢谢小凌中心",
+    Title = "同意使用此ui吗？",
+    Text = "小凌的提示",
     Icon = "rbxassetid://3926305904",
     Duration = 60,
     Callback = bindable,
-    Button1 = "滚 我不开",
-    Button2 = "没问题"
+    Button1 = "同意✔",
+    Button2 = "拒绝❌"
 })
 
 local CoreGui = game:GetService("StarterGui")
@@ -1863,7 +1876,7 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/The%20Rake.lua"))()
   end
 })
-Tab:AddParagraph("666666小凌是缝合王")
+Tab:AddParagraph("这几天懒得更新了😂")
 
 local Tab= Window:MakeTab({
 	Name = "杂牌脚本",
