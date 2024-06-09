@@ -1,21 +1,3 @@
-notifications:notify{
-            Title = "小凌中心",
-            Description = "已开启反AFK",
-            Icon = 6031302918,
-            Accept = {
-                Text = "知道了",
-                Callback = function()
-                    print("!!!")
-                end
-            },
-            Length = 30
-        }
-       
-local bindable = Instance.new("BindableFunction")
-bindable.OnInvoke = function(button)
-print("1")
-end
-
 game:GetService("StarterGui"):SetCore("SendNotification",{
     Title = "同意使用此ui吗？",
     Text = "小凌的提示",
