@@ -1,11 +1,18 @@
+local CoreGui = game:GetService("StarterGui")
+CoreGui:SetCore("SendNotification", {
+    Title = "今天晚上更新",
+    Text = "ok？",
+    Duration = 10
+})
+
 game:GetService("StarterGui"):SetCore("SendNotification",{
-    Title = "同意使用此ui吗？",
+    Title = "已开启反挂机",
     Text = "小凌的提示",
     Icon = "rbxassetid://3926305904",
     Duration = 60,
     Callback = bindable,
-    Button1 = "同意✔",
-    Button2 = "拒绝❌"
+    Button1 = "谢谢",
+    Button2 = "滚 我不开"
 })
 
 local CoreGui = game:GetService("StarterGui")
