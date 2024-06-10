@@ -1,15 +1,3 @@
-CoreGui:SetCore("SendNotification", {
-    Title = "如你所见，UI也是换新了",
-    Text = "locaing...(已启用反挂机)",
-    Duration = 5, 
-})
-
-CoreGui:SetCore("SendNotification", {
-    Title = "小凌中心-1.2.2",
-    Text = "😭😭😭",
-    Duration = 5, 
-})
-
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/jrdKakD6"))()
 local LBLG = Instance.new("ScreenGui", getParent)
 local LBL = Instance.new("TextLabel", getParent)
@@ -47,13 +35,12 @@ local function HeartbeatUpdate()
 	FrameUpdateTable[1] = LastIteration
 	local CurrentFPS = (tick() - Start >= 1 and #FrameUpdateTable) or (#FrameUpdateTable / (tick() - Start))
 	CurrentFPS = CurrentFPS - CurrentFPS % 1
-	FpsLabel.Text = ("Time:"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S"))
+	FpsLabel.Text = ("北京时间:"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S"))
 end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
-local Window = OrionLib:MakeWindow({Name = "1.2.2-小凌中心", HidePremium = false, SaveConfig = true,IntroText = "您好欢迎执行小凌中心", ConfigFolder = "你好我Xiao-Ling啊"})
-game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "永久免费"; Text ="请勿圈钱，懂不懂？"; Duration = 4; })
-
+local Window = OrionLib:MakeWindow({Name = "小凌中心-1.2.2", HidePremium = false, SaveConfig = true,IntroText = "欢迎执行小凌中心", ConfigFolder = "祝你生活愉快"})
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "小凌中心"; Text ="小凌中心"; Duration = 4; })
 local about = Window:MakeTab({
     Name = "₪信息",
     Icon = "rbxassetid://4483345998",
