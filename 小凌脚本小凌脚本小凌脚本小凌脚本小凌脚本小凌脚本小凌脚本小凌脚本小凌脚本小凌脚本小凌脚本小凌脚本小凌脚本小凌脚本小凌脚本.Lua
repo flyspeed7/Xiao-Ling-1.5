@@ -1,6 +1,39 @@
-local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/xLRUSiKx'))()
-local Window = OrionLib:MakeWindow({Name = "UI发生错误", HidePremium = false, SaveConfig = true,IntroText = "BS-07650008", ConfigFolder = "e12a1f50N8d"})
 
+local bindable = Instance.new("BindableFunction")
+bindable.OnInvoke = function(button)
+print("1")
+end
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "UI未完成更新你感觉可惜吗？",
+    Text = "对不起，本人正在编写另一个",
+    Icon = "rbxassetid://3926305904",
+    Duration = 60,
+    Callback = bindable,
+    Button1 = "可惜了啊",
+    Button2 = "没事 功能多就行"
+})
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "小凌脚本-1.2.3",
+    Text = "加载....已开启反挂机",
+    Duration = 5, 
+})
+CoreGui:SetCore("SendNotification", {
+    Title = "UI更新未完成",
+    Text = "抱歉😭",
+    Duration = 5, 
+})
+print("小凌中心滴反挂机已经为你开好了 喵~")
+		local vu = game:GetService("VirtualUser")
+		game:GetService("Players").LocalPlayer.Idled:connect(function()
+		   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		   wait(1)
+		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		end)
+local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/SePpsSPZ'))()
+local Window = OrionLib:MakeWindow({Name = "✰小凌中心-1.2.3-Beta✰", HidePremium = false, SaveConfig = true,IntroText = "₪感谢您执行小凌中心卐", ConfigFolder = "热烈欢迎"})
 local about = Window:MakeTab({
     Name = "₪信息",
     Icon = "rbxassetid://4483345998",
@@ -16,7 +49,7 @@ local Tab = Window:MakeTab({
   })
   
  Tab:AddButton({
-	Name = "₪K1S(落叶中心)",
+	Name = "₪K1S(落叶中心)已爆炸",
 	Callback = function()
 getgenv().LS="落叶中心"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/krlpl/Deciduous-center-LS/main/%E8%90%BD%E5%8F%B6%E4%B8%AD%E5%BF%83%E6%B7%B7%E6%B7%86.txt"))()
@@ -32,7 +65,7 @@ Tab:AddButton({
 
 Tab:AddTextbox({
 	Name = "移动速度",
-	Default = "",
+	Default = "Speed",
 	TextDisappear = true,
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
@@ -40,8 +73,8 @@ Tab:AddTextbox({
 })
 
  Tab:AddTextbox({
-	Name = "跳跃高度",
-	Default = "",
+	Name = "跳跃高度Copy How-Hiw",
+	Default = "Jump",
 	TextDisappear = true,
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
@@ -50,7 +83,7 @@ Tab:AddTextbox({
 
 Tab:AddTextbox({
 	Name = "最大血量",
-	Default = "",
+	Default = "HP",
 	TextDisappear = true,
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.MaxHealth = Value
@@ -59,7 +92,7 @@ Tab:AddTextbox({
 
 Tab:AddTextbox({
 	Name = "当前血量",
-	Default = "",
+	Default = "U.HP",
 	TextDisappear = true,
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.Health = Value
@@ -75,7 +108,7 @@ end
 
 Tab:AddTextbox({
 	Name = "重力设置",
-	Default = "",
+	Default = "GR",
 	TextDisappear = true,
 	Callback = function(Value)
 		game.Workspace.Gravity = Value
@@ -1849,7 +1882,7 @@ Tab:AddButton({
   end
 })
 local Tab= Window:MakeTab({
-	Name = "NN中心特供!",
+	Name = "傻，NN中心特供!",
 	Icon = "rbxassetid://7733779610",
 	PremiumOnly = false
 })
@@ -1859,3 +1892,9 @@ Tab:AddButton({
   end
 })
 Tab:AddParagraph("NN中心有中国最牛的doors")
+Tab:AddButton({
+  Name = "傻脚本",
+  Callback = function ()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/sharksharksharkshark/shark-shark-shark-shark-shark/main/shark-scriptlollol.txt",true))()
+  end
+})
