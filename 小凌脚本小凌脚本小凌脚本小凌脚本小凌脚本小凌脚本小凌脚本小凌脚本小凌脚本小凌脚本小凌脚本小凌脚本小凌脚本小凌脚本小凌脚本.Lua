@@ -16,7 +16,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
-    Title = "小凌脚本-1.2.3",
+    Title = "小凌脚本-1.2.4",
     Text = "加载....已开启反挂机",
     Duration = 5, 
 })
@@ -33,7 +33,7 @@ print("小凌中心滴反挂机已经为你开好了 喵~")
 		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
 local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/SePpsSPZ'))()
-local Window = OrionLib:MakeWindow({Name = "✰小凌中心-1.2.3-Beta✰", HidePremium = false, SaveConfig = true,IntroText = "₪感谢您执行小凌中心卐", ConfigFolder = "热烈欢迎"})
+local Window = OrionLib:MakeWindow({Name = "✰小凌中心-1.2.4-Beta✰", HidePremium = false, SaveConfig = true,IntroText = "₪感谢您执行小凌中心卐", ConfigFolder = "热烈欢迎"})
 local about = Window:MakeTab({
     Name = "₪信息",
     Icon = "rbxassetid://4483345998",
@@ -2000,95 +2000,6 @@ Tab:AddButton({
   end
 })
 Tab:AddButton({
-  Name = "驾驶帝国自动胜利",
-  Callback = function ()
-            --Vars
-        LocalPlayer = game:GetService("Players").LocalPlayer
-        Camera = workspace.CurrentCamera
-        VirtualUser = game:GetService("VirtualUser")
-        MarketplaceService = game:GetService("MarketplaceService")
-        
-        --Get Current Vehicle
-        function GetCurrentVehicle()
-            return LocalPlayer.Character and LocalPlayer.Character:FindFirstChild("Humanoid") and LocalPlayer.Character.Humanoid.SeatPart and LocalPlayer.Character.Humanoid.SeatPart.Parent
-        end
-        
-        --Regular TP
-        function TP(cframe)
-            GetCurrentVehicle():SetPrimaryPartCFrame(cframe)
-        end
-        
-        --Velocity TP
-        function VelocityTP(cframe)
-            TeleportSpeed = math.random(600, 600)
-            Car = GetCurrentVehicle()
-            local BodyGyro = Instance.new("BodyGyro", Car.PrimaryPart)
-            BodyGyro.P = 5000
-            BodyGyro.maxTorque = Vector3.new(9e9, 9e9, 9e9)
-            BodyGyro.CFrame = Car.PrimaryPart.CFrame
-            local BodyVelocity = Instance.new("BodyVelocity", Car.PrimaryPart)
-            BodyVelocity.MaxForce = Vector3.new(9e9, 9e9, 9e9)
-            BodyVelocity.Velocity = CFrame.new(Car.PrimaryPart.Position, cframe.p).LookVector * TeleportSpeed
-            wait((Car.PrimaryPart.Position - cframe.p).Magnitude / TeleportSpeed)
-            BodyVelocity.Velocity = Vector3.new()
-            wait(0.1)
-            BodyVelocity:Destroy()
-            BodyGyro:Destroy()
-        end
-        
-        --Auto Farm
-        StartPosition = CFrame.new(Vector3.new(4940.19775, 66.0195084, -1933.99927, 0.343969434, -0.00796990748, -0.938947022, 0.00281227613, 0.999968231, -0.00745762791, 0.938976645, -7.53822824e-05, 0.343980938), Vector3.new())
-        EndPosition = CFrame.new(Vector3.new(1827.3407, 66.0150146, -658.946655, -0.366112858, 0.00818905979, 0.930534422, 0.00240773871, 0.999966264, -0.00785277691, -0.930567324, -0.000634518801, -0.366120219), Vector3.new())
-        AutoFarmFunc = coroutine.create(function()
-            while wait() do
-                if not AutoFarm then
-                    AutoFarmRunning = false
-                    coroutine.yield()
-                end
-                AutoFarmRunning = true
-                pcall(function()
-                    if not GetCurrentVehicle() and tick() - (LastNotif or 0) > 5 then
-                        LastNotif = tick()
-                    else
-                        TP(StartPosition + (TouchTheRoad and Vector3.new(0,0,0) or Vector3.new(0, 0, 0)))
-                        VelocityTP(EndPosition + (TouchTheRoad and Vector3.new() or Vector3.new(0, 0, 0)))
-                        TP(EndPosition + (TouchTheRoad and Vector3.new() or Vector3.new(0, 0, 0)))
-                        VelocityTP(StartPosition + (TouchTheRoad and Vector3.new() or Vector3.new(0, 0, 0)))
-                    end
-                end)
-            end
-        end)
-        
-        --Anti AFK
-        AntiAFK = true
-        LocalPlayer.Idled:Connect(function()
-            VirtualUser:CaptureController()
-            VirtualUser:ClickButton2(Vector2.new(), Camera.CFrame)
-        end)
-        
-        local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Simak90/pfsetcetc/main/fluxed.lua"))() -- UI Library
-                local win = lib:Window("MaxHub", "Signed By JMaxeyy", Color3.fromRGB(255, 0, 0), _G.closeBind) -- done mess with
-            
-                ---------Spins--------------------------------
-                local Visual = win:Tab("Farm Section", "http://www.roblox.com/asset/?id=6023426915")
-                Visual:Label("Farms")
-                Visual:Line()
-                
-                Visual:Toggle("Auto Farm", "Activates farm. Get in car to start",false, function(value)
-                    AutoFarm = value
-                        if value and not AutoFarmRunning then
-                            coroutine.resume(AutoFarmFunc)
-                        end
-                end)
-                Visual:Toggle("TouchTheRoad", "doesnt work for some cars",false, function(value)
-                    TouchTheRoad = value
-                end)
-                Visual:Toggle("AntiAFK", "simulates keypressing",false, function(value)
-                    AntiAFK = value
-                end)
-  end
-})
-Tab:AddButton({
   Name = "Scienco HUB",
   Callback = function ()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Marco8642/science/main/drivingempire", true))()
@@ -2102,7 +2013,6 @@ local Tab= Window:MakeTab({
 	PremiumOnly = false
 })
 Tab:AddParagraph("小凌本人改的Executer")
-Tab:AddParagraph("闪退的千万别开")
 Tab:AddButton({
   Name = "小凌-Executer",
   Callback = function ()  loadstring(game:HttpGet("https://raw.githubusercontent.com/flyspeed7/Xiao-Ling-Kato-Executer/main/Kato%E6%BA%90%E7%A0%81%E6%9C%80%E6%96%B0%EF%BC%88%E7%9C%9F%E7%9A%84%E6%B3%A8%E5%85%A5%E5%99%A8%EF%BC%89.txt"))()
