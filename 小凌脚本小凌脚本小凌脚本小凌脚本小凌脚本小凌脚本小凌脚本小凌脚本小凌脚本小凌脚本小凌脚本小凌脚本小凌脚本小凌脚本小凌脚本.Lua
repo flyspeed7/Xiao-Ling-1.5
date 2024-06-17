@@ -1961,3 +1961,29 @@ Tab:AddButton({
 loadstring(game:HttpGet("https://pastebin.com/raw/4LDKiJ5a"))()
     end
 })
+
+local Tab= Window:MakeTab({
+	Name = "犯罪率 家里 提供!",
+	Icon = "rbxassetid://7733779610",
+	PremiumOnly = false
+})
+Tab:AddButton({
+  Name = "FemWare 电脑端",
+  Callback = function ()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/JackHiggly/FemWare/main/FemWare%20Alternative", true))()
+  end
+})
+Tab:AddButton({
+  Name = "FemWare 手机端",
+  Callback = function ()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GlobeReverse/Moonlight/main/Criminality.lua"))()
+  end
+})
+Tab:AddButton({
+  Name = "Moonlight-Hub",
+  Callback = function ()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GlobeReverse/Moonlight/main/Criminality.lua"))()
+  end
+})
+Tab:AddParagraph("感谢QQ群里的《家里》提供!!!!")
+Tab:AddParagraph("火速给他QQ点赞!!!")
