@@ -2095,3 +2095,16 @@ Tab:AddButton({
   end
 })
 Tab:AddParagraph("群友提供")
+
+local Tab= Window:MakeTab({
+	Name = "小凌改Kato执行器",
+	Icon = "rbxassetid://7733779610",
+	PremiumOnly = false
+})
+Tab:AddParagraph("小凌本人改的Executer")
+Tab:AddParagraph("闪退的千万别开")
+Tab:AddButton({
+  Name = "小凌-Executer",
+  Callback = function ()  loadstring(game:HttpGet("https://raw.githubusercontent.com/flyspeed7/Xiao-Ling-Kato-Executer/main/Kato%E6%BA%90%E7%A0%81%E6%9C%80%E6%96%B0%EF%BC%88%E7%9C%9F%E7%9A%84%E6%B3%A8%E5%85%A5%E5%99%A8%EF%BC%89.txt"))()
+  end
+})
