@@ -6,7 +6,7 @@ end
 
 game:GetService("StarterGui"):SetCore("SendNotification",{
     Title = "UI未完成更新你感觉可惜吗？",
-    Text = "对不起，本人正在编写另一个",
+    Text = "对不起，正在编写另一个",
     Icon = "rbxassetid://3926305904",
     Duration = 60,
     Callback = bindable,
@@ -1866,7 +1866,7 @@ Tab:AddButton({
 Tab:AddParagraph("这几天懒得更新了😂")
 
 local Tab= Window:MakeTab({
-	Name = "杂牌脚本",
+	Name = "杂牌脚本(就两个)",
 	Icon = "rbxassetid://7733779610",
 	PremiumOnly = false
 })
@@ -1897,4 +1897,67 @@ Tab:AddButton({
   Callback = function ()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/sharksharksharkshark/shark-shark-shark-shark-shark/main/shark-scriptlollol.txt",true))()
   end
+})
+local Tab= Window:MakeTab({
+	Name = "Doora＆Rooms",
+	Icon = "rbxassetid://7733779610",
+	PremiumOnly = false
+})
+Tab:AddButton({
+  Name = "小凌A-60提示 By:小凌a",
+  Callback = function ()
+    Default = false,
+        Callback = function(x)
+    local objectName = "monster"
+local objectStatus = false
+local StarterGui = game:GetService("StarterGui")
+local notifyCount = {
+    appear = 0,
+    disappear = 0,
+    notExist = 0
+}
+local function notify(title, text, type)
+    if (type == "appear" and notifyCount.appear < 2) or
+       (type == "disappear" and notifyCount.disappear < 2) or
+       (type == "notExist" and notifyCount.notExist < 2) then
+        OrionLib:MakeNotification({
+            Name = title,
+            Content = text,
+            Time = 6
+        })
+        notifyCount[type] = notifyCount[type] + 1
+    end
+end
+local function checkObject()
+    local object = workspace:FindFirstChild(objectName)
+    if object then
+        if not objectStatus then
+            notify("小凌的提示", "怪物已刷新 请躲柜子 A-60'未提示", "appear")
+            objectStatus = true
+        end
+    else
+        if objectStatus then
+            notify("小凌的提示", "怪物已消失 A-60'请打开手电筒查看", "disappear")
+            objectStatus = false
+        else
+            notify("小凌的提示", "A-60'无提示 请自己看手电筒的光", "notExist")
+            wait(5)
+        end
+    end
+end
+local function startMonitoring()
+    while true do
+        checkObject()
+        wait(0)
+    end
+end
+spawn(startMonitoring)
+  end
+})
+
+Tab:AddButton({
+  Name = "高亮",
+  Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/4LDKiJ5a"))()
+    end
 })
