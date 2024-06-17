@@ -13,7 +13,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
     Button1 = "可惜了啊",
     Button2 = "没事 功能多就行"
 })
-local CoreGui = game:GetService("StarterGui")
+local CoreGui = game:GetService("Sta把我删了rterGui")
 
 CoreGui:SetCore("SendNotification", {
     Title = "小凌脚本-1.2.4",
