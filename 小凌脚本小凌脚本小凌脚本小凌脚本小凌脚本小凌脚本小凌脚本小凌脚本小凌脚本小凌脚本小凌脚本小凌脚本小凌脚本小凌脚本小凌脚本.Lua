@@ -7,7 +7,7 @@ end
 game:GetService("StarterGui"):SetCore("SendNotification",{
     Title = "已开启反挂机",
     Text = "小凌中心",
-    Icon = "rbxassetid://7734068321",
+    Icon = "rbxassetid://7734053495",
     Duration = 60,
     Callback = bindable,
     Button1 = "谢谢",
@@ -33,7 +33,7 @@ print("小凌中心滴反挂机已经为你开好了 喵~")
 		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
 local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/SePpsSPZ'))()
-local Window = OrionLib:MakeWindow({Name = "小凌中心-1.2.4-MT", HidePremium = false, SaveConfig = true,IntroText = "₪感谢您执行小凌中心卐", ConfigFolder = "热烈欢迎"})
+local Window = OrionLib:MakeWindow({Name = "小凌中心-1.2.4-MT", HidePremium = false, SaveConfig = true,IntroText = "感谢您执行小凌中心", ConfigFolder = "热烈欢迎"})
 local about = Window:MakeTab({
     Name = "₪信息",
     Icon = "rbxassetid://4483345998",
