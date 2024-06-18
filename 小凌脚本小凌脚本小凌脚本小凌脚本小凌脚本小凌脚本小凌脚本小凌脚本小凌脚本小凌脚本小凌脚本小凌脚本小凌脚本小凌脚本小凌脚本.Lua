@@ -13,7 +13,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
     Button1 = "可惜了啊",
     Button2 = "没事 功能多就行"
 })
-local CoreGui = game:GetService("Sta把我删了rterGui")
+local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
     Title = "小凌脚本-1.2.4",
@@ -1961,7 +1961,6 @@ Tab:AddButton({
 loadstring(game:HttpGet("https://pastebin.com/raw/4LDKiJ5a"))()
     end
 })
-
 local Tab= Window:MakeTab({
 	Name = "犯罪率 家里 提供!",
 	Icon = "rbxassetid://7733779610",
@@ -2012,7 +2011,6 @@ local Tab= Window:MakeTab({
 	Icon = "rbxassetid://7733779610",
 	PremiumOnly = false
 })
-Tab:AddParagraph("小凌本人改的Executer")
 Tab:AddButton({
   Name = "小凌-Executer",
   Callback = function ()  loadstring(game:HttpGet("https://raw.githubusercontent.com/flyspeed7/Xiao-Ling-Kato-Executer/main/Kato%E6%BA%90%E7%A0%81%E6%9C%80%E6%96%B0%EF%BC%88%E7%9C%9F%E7%9A%84%E6%B3%A8%E5%85%A5%E5%99%A8%EF%BC%89.txt"))()
