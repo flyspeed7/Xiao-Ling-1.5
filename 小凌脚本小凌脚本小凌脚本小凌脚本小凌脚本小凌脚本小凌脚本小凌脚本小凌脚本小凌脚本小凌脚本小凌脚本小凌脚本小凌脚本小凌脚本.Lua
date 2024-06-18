@@ -5,13 +5,13 @@ print("1")
 end
 
 game:GetService("StarterGui"):SetCore("SendNotification",{
-    Title = "UI未完成更新你感觉可惜吗？",
-    Text = "对不起，正在编写另一个",
-    Icon = "rbxassetid://3926305904",
+    Title = "已开启反挂机",
+    Text = "小凌中心",
+    Icon = "rbxassetid://7734068321",
     Duration = 60,
     Callback = bindable,
-    Button1 = "可惜了啊",
-    Button2 = "没事 功能多就行"
+    Button1 = "谢谢",
+    Button2 = "关闭"
 })
 local CoreGui = game:GetService("StarterGui")
 
@@ -21,8 +21,8 @@ CoreGui:SetCore("SendNotification", {
     Duration = 5, 
 })
 CoreGui:SetCore("SendNotification", {
-    Title = "UI更新未完成",
-    Text = "抱歉😭",
+    Title = "圈钱死母",
+    Text = "请勿拿此脚本圈钱",
     Duration = 5, 
 })
 print("小凌中心滴反挂机已经为你开好了 喵~")
@@ -33,7 +33,7 @@ print("小凌中心滴反挂机已经为你开好了 喵~")
 		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
 local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/SePpsSPZ'))()
-local Window = OrionLib:MakeWindow({Name = "✰小凌中心-1.2.4-Beta✰", HidePremium = false, SaveConfig = true,IntroText = "₪感谢您执行小凌中心卐", ConfigFolder = "热烈欢迎"})
+local Window = OrionLib:MakeWindow({Name = "小凌中心-1.2.4-MT", HidePremium = false, SaveConfig = true,IntroText = "₪感谢您执行小凌中心卐", ConfigFolder = "热烈欢迎"})
 local about = Window:MakeTab({
     Name = "₪信息",
     Icon = "rbxassetid://4483345998",
@@ -49,10 +49,9 @@ local Tab = Window:MakeTab({
   })
   
  Tab:AddButton({
-	Name = "₪K1S(落叶中心)已爆炸",
+	Name = "₪Krx(落叶中心)",
 	Callback = function()
-getgenv().LS="落叶中心"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/krlpl/Deciduous-center-LS/main/%E8%90%BD%E5%8F%B6%E4%B8%AD%E5%BF%83%E6%B7%B7%E6%B7%86.txt"))()
+getgenv().LS="落叶中心" loadstring(game:HttpGet("https://raw.githubusercontent.com/krlpl/Deciduous-center-LS/main/%E8%90%BD%E5%8F%B6%E4%B8%AD%E5%BF%83%E6%B7%B7%E6%B7%86.txt"))()
 end
 })
 
@@ -1701,18 +1700,6 @@ Tab:AddButton({
 end
 })
 Tab:AddButton({
-  Name = "开启反挂机(ui爆炸了)",
-  Callback = function ()
-  print("反挂机开启成功")
-		local vu = game:GetService("VirtualUser")
-		game:GetService("Players").LocalPlayer.Idled:connect(function()
-		   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-		   wait(1)
-		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-		end)
-  end
-})
-Tab:AddButton({
   Name = "猫猫脚本",
   Callback = function ()
    loadstring(game:HttpGet("https://ayangwp.cn/api/v3/file/get/9281/m%E8%84%9A%E6%9C%AC%E4%BA%8C%E4%BB%A3.txt?sign=JBB6aabVopKLdV2EdLGV0RUN1kDDNLxk7fWCcbZlDkk%3D%3A0"))() 
@@ -1898,62 +1885,6 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/sharksharksharkshark/shark-shark-shark-shark-shark/main/shark-scriptlollol.txt",true))()
   end
 })
-local Tab= Window:MakeTab({
-	Name = "Doora＆Rooms",
-	Icon = "rbxassetid://7733779610",
-	PremiumOnly = false
-})
-Tab:AddButton({
-  Name = "小凌A-60提示 By:小凌a",
-  Callback = function ()
-    Default = false,
-        Callback = function(x)
-    local objectName = "monster"
-local objectStatus = false
-local StarterGui = game:GetService("StarterGui")
-local notifyCount = {
-    appear = 0,
-    disappear = 0,
-    notExist = 0
-}
-local function notify(title, text, type)
-    if (type == "appear" and notifyCount.appear < 2) or
-       (type == "disappear" and notifyCount.disappear < 2) or
-       (type == "notExist" and notifyCount.notExist < 2) then
-        OrionLib:MakeNotification({
-            Name = title,
-            Content = text,
-            Time = 6
-        })
-        notifyCount[type] = notifyCount[type] + 1
-    end
-end
-local function checkObject()
-    local object = workspace:FindFirstChild(objectName)
-    if object then
-        if not objectStatus then
-            notify("小凌的提示", "怪物已刷新 请躲柜子 A-60'未提示", "appear")
-            objectStatus = true
-        end
-    else
-        if objectStatus then
-            notify("小凌的提示", "怪物已消失 A-60'请打开手电筒查看", "disappear")
-            objectStatus = false
-        else
-            notify("小凌的提示", "A-60'无提示 请自己看手电筒的光", "notExist")
-            wait(5)
-        end
-    end
-end
-local function startMonitoring()
-    while true do
-        checkObject()
-        wait(0)
-    end
-end
-spawn(startMonitoring)
-  end
-})
 
 Tab:AddButton({
   Name = "高亮",
@@ -1986,7 +1917,6 @@ Tab:AddButton({
 })
 Tab:AddParagraph("感谢QQ群里的《家里》提供!!!!")
 Tab:AddParagraph("火速给他QQ点赞!!!")
-
 local Tab = Window:MakeTab({
 	Name = "驾驶帝国",
 	Icon = "rbxassetid://7734068321",
