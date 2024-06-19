@@ -1,4 +1,3 @@
-
 local bindable = Instance.new("BindableFunction")
 bindable.OnInvoke = function(button)
 print("1")
@@ -1973,24 +1972,6 @@ Tab:AddButton({
   Name = "Code X-ios",
   Callback = function ()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/SPDM-Team/Arceus-X-NEO-public/main/Costumers/codex_ios.lua"))()
-  end
-})
-Tab:AddButton({
-  Name = "Delta-UI",
-  Callback = function ()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/SPDM-Team/Arceus-X-NEO-public/main/Costumers/delta.lua"))()
-  end
-})
-Tab:AddButton({
-  Name = "Trigon",
-  Callback = function ()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/SPDM-Team/Arceus-X-NEO-public/main/Costumers/trigon.lua"))()
-  end
-})
-Tab:AddButton({
-  Name = "Alysse-UI",
-  Callback = function ()
-    https://raw.githubusercontent.com/SPDM-Team/Arceus-X-NEO-public/main/alysseui.lua
   end
 })
 local Tab= Window:MakeTab({
