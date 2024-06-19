@@ -2009,12 +2009,6 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/%E7%A9%BA%E8%84%9A%E6%9C%AC666.txt"))()
   end
 })
-Tab:AddButton({
-  Name = "枕头脚本",
-  Callback = function ()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/%E6%9E%95%E5%A4%B4%E8%84%9A%E6%9C%AC1.4(%E6%BA%90%E7%A0%812).txt"))()
-  end
-})
 
 local Tab= Window:MakeTab({
 	Name = "林脚本破解版",
