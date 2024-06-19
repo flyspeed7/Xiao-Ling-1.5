@@ -15,14 +15,20 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
-    Title = "小凌脚本-1.2.4",
+    Title = "小凌脚本-1.2.5",
     Text = "加载....已开启反挂机",
     Duration = 5, 
 })
 CoreGui:SetCore("SendNotification", {
-    Title = "圈钱死母",
+    Title = "圈钱死母!",
     Text = "请勿拿此脚本圈钱",
     Duration = 5, 
+})
+local CoreGui = game:GetService("StarterGui")
+CoreGui:SetCore("SendNotification", {
+    Title = "小凌中心的欢迎",
+    Text = "欢迎"..game.Players.LocalPlayer.Name.."，执行小凌中心",
+    Duration = 5,
 })
 print("小凌中心滴反挂机已经为你开好了 喵~")
 		local vu = game:GetService("VirtualUser")
@@ -32,7 +38,7 @@ print("小凌中心滴反挂机已经为你开好了 喵~")
 		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
 local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/SePpsSPZ'))()
-local Window = OrionLib:MakeWindow({Name = "小凌中心-1.2.4-MT", HidePremium = false, SaveConfig = true,IntroText = "感谢您执行小凌中心", ConfigFolder = "热烈欢迎"})
+local Window = OrionLib:MakeWindow({Name = "小凌中心-1.2.5", HidePremium = false, SaveConfig = true,IntroText = "感谢您执行小凌中心", ConfigFolder = "热烈欢迎"})
 local about = Window:MakeTab({
     Name = "₪信息",
     Icon = "rbxassetid://4483345998",
