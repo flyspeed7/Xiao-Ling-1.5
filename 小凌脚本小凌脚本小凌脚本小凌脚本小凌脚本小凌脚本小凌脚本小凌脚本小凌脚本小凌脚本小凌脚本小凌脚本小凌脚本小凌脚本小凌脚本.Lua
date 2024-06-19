@@ -1868,6 +1868,12 @@ Tab:AddButton({
    loadstring(game:HttpGet("https://raw.githubusercontent.com/useranewrff/roblox-/main/%E5%AF%BC%E7%AE%A1%E6%B7%B7%E6%B7%86.lua"))() 
   end
 })
+Tab:AddButton({
+  Name = "斌脚本2.0小凌破解卡密",
+  Callback = function () loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/bin%E6%96%8C%E8%84%9A%E6%9C%ACV2.0.0.txt"))()
+  end
+})
+
 local Tab= Window:MakeTab({
 	Name = "傻，NN中心特供!",
 	Icon = "rbxassetid://7733779610",
@@ -1937,12 +1943,82 @@ Tab:AddButton({
 Tab:AddParagraph("群友提供")
 
 local Tab= Window:MakeTab({
-	Name = "小凌改Kato执行器",
+	Name = "小凌-执行器",
 	Icon = "rbxassetid://7733779610",
 	PremiumOnly = false
 })
 Tab:AddButton({
-  Name = "小凌-Executer",
+  Name = "Kato-UI",
   Callback = function ()  loadstring(game:HttpGet("https://raw.githubusercontent.com/flyspeed7/Xiao-Ling-Kato-Executer/main/Kato%E6%BA%90%E7%A0%81%E6%9C%80%E6%96%B0%EF%BC%88%E7%9C%9F%E7%9A%84%E6%B3%A8%E5%85%A5%E5%99%A8%EF%BC%89.txt"))()
+  end
+})
+Tab:AddButton({
+  Name = "Vega X-UI",
+  Callback = function () loadstring(game:HttpGet("https://raw.githubusercontent.com/SPDM-Team/Arceus-X-NEO-public/main/Costumers/vegax.lua"))()
+  end
+})
+Tab:AddButton({
+  Name = "Code X-UI",
+  Callback = function ()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SPDM-Team/Arceus-X-NEO-public/main/Costumers/codex.lua"))()
+  end
+})
+Tab:AddButton({
+  Name = "Evon-UI",
+  Callback = function ()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/SPDM-Team/Arceus-X-NEO-public/main/Costumers/evon.lua"))()
+  end
+})
+Tab:AddButton({
+  Name = "Code X-ios",
+  Callback = function ()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SPDM-Team/Arceus-X-NEO-public/main/Costumers/codex_ios.lua"))()
+  end
+})
+Tab:AddButton({
+  Name = "Delta-UI",
+  Callback = function ()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SPDM-Team/Arceus-X-NEO-public/main/Costumers/delta.lua"))()
+  end
+})
+Tab:AddButton({
+  Name = "Trigon",
+  Callback = function ()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SPDM-Team/Arceus-X-NEO-public/main/Costumers/trigon.lua"))()
+  end
+})
+Tab:AddButton({
+  Name = "Alysse-UI",
+  Callback = function ()
+    https://raw.githubusercontent.com/SPDM-Team/Arceus-X-NEO-public/main/alysseui.lua
+  end
+})
+local Tab= Window:MakeTab({
+	Name = "空,斌脚本特供!",
+	Icon = "rbxassetid://7733779610",
+	PremiumOnly = false
+})
+Tab:AddButton({
+  Name = "空脚本",
+  Callback = function ()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/%E7%A9%BA%E8%84%9A%E6%9C%AC1.0.3.txt"))()
+  end
+})
+Tab:AddButton({
+  Name = "空脚本2",
+  Callback = function ()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/666.txt"))()
+  end
+})
+Tab:AddButton({
+  Name = "斌脚本-小凌破解卡密",
+  Callback = function ()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/bin%E6%96%8C%E8%84%9A%E6%9C%ACV2.0.0.txt"))()
+  end
+})
+Tab:AddButton({
+  Name = "空,XSC合作脚本卡密：x或e或a",
+  Callback = function ()
+    getgenv().XC="作者XC"loadstring(game:HttpGet("https://pastebin.com/raw/PAFzYx0F"))()
   end
 })
