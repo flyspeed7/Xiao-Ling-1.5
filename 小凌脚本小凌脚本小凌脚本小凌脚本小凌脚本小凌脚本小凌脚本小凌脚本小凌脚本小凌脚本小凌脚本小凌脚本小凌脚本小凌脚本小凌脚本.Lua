@@ -6,7 +6,7 @@ end
 game:GetService("StarterGui"):SetCore("SendNotification",{
     Title = "已开启反挂机",
     Text = "小凌中心",
-    Icon = "rbxassetid://17860099393",
+    Icon = "rbxassetid://16060333448",
     Duration = 60,
     Callback = bindable,
     Button1 = "谢谢",
@@ -36,7 +36,7 @@ local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/SePpsSPZ'))()
 local Window = OrionLib:MakeWindow({Name = "小凌中心-1.2.5", HidePremium = false, SaveConfig = true,IntroText = "感谢您执行小凌中心", ConfigFolder = "热烈欢迎"})
 local about = Window:MakeTab({
     Name = "₪信息",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://773453495",
     PremiumOnly = false
 })
 about:AddParagraph("您的用户名:"," "..game.Players.LocalPlayer.Name.."")
@@ -44,7 +44,7 @@ about:AddParagraph("您的注入器:"," "..identifyexecutor().."")
 about:AddParagraph("您当前服务器的ID"," "..game.GameId.."")
 local Tab = Window:MakeTab({
   Name = "₪通用",
-  Icon = "rbxassetid://4483345998",
+  Icon = "rbxassetid://773453495",
   PremiumOnly = false
   })
   
