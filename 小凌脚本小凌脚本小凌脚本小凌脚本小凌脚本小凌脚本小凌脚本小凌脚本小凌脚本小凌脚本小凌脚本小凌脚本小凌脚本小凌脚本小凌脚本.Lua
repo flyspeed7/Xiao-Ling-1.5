@@ -19,11 +19,6 @@ CoreGui:SetCore("SendNotification", {
     Text = "加载....已开启反挂机",
     Duration = 5, 
 })
-CoreGui:SetCore("SendNotification", {
-    Title = "圈钱死母!",
-    Text = "请勿拿此脚本圈钱",
-    Duration = 5, 
-})
 local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
     Title = "小凌中心的欢迎",
@@ -1159,6 +1154,8 @@ Tab:AddParagraph("你别发神经啊")
 Tab:AddParagraph("缝合大佬小凌")
 Tab:AddParagraph("QB脚本作者对不起我不该骂你！！！")
 Tab:AddParagraph("退休对不起我不该开源的")
+about:AddParagraph("看得出来你是真心喜欢第五人格，有空我带带你吧，我现在五阶五，会在出刀时用飞轮，带你体验一下高端局。强者就是要羞辱弱者！我常年保持五阶的强劲实力","")
+about:AddParagraph("强者就是要羞辱弱者！我常年保持五阶的强劲实力，甚至巅峰时期上过c牌，手感好的时候甚至能打出遛60s这种高端操作，你知道预判闪现吗？我打过。","")
 Tab:AddButton({
 	Name = "小凌💓",
 	Callback = function()
@@ -1315,7 +1312,7 @@ Tab:AddButton({
 })
 Tab:AddParagraph("以后就更新1.4(云端更新学会了)")
 Tab:AddParagraph("感谢小云教我云端更新mua~")
-Tab:AddParagraph("你猜 喵~ 别圈钱 懂？")
+Tab:AddParagraph("呃呃呃")
 Tab:AddButton({
   Name = "MSDOORS",
   Callback = function ()
