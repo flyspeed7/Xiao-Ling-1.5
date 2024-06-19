@@ -6,7 +6,7 @@ end
 game:GetService("StarterGui"):SetCore("SendNotification",{
     Title = "已开启反挂机",
     Text = "小凌中心",
-    Icon = "rbxassetid://7734053495",
+    Icon = "rbxassetid://17860099393",
     Duration = 60,
     Callback = bindable,
     Button1 = "谢谢",
@@ -1986,7 +1986,7 @@ Tab:AddButton({
   end
 })
 Tab:AddButton({
-  Name = "空脚本2",
+  Name = "空-Doors＆Rooms",
   Callback = function ()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/666.txt"))()
   end
@@ -2003,6 +2003,19 @@ Tab:AddButton({
     getgenv().XC="作者XC"loadstring(game:HttpGet("https://pastebin.com/raw/PAFzYx0F"))()
   end
 })
+Tab:AddButton({
+  Name = "空脚本3",
+  Callback = function ()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/%E7%A9%BA%E8%84%9A%E6%9C%AC666.txt"))()
+  end
+})
+Tab:AddButton({
+  Name = "枕头脚本",
+  Callback = function ()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/%E6%9E%95%E5%A4%B4%E8%84%9A%E6%9C%AC1.4(%E6%BA%90%E7%A0%812).txt"))()
+  end
+})
+
 local Tab= Window:MakeTab({
 	Name = "林脚本破解版",
 	Icon = "rbxassetid://7733779610",
