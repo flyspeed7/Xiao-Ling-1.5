@@ -1986,7 +1986,11 @@ Tab:AddButton({
   Callback = function () loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/%E6%B3%A8%E5%85%A5%E5%99%A8"))()
   end
 })
-
+Tab:AddButton({
+  Name = "Arceus X-UI",
+  Callback = function () loadstring(game:HttpGet("https://raw.githubusercontent.com/flyspeed7/Xiao_Ling-Arceus.Executer/main/Arceus%20X%E6%BA%90%E7%A0%81.lua"))("小凌改Arceus X") 
+  end
+})
 local Tab= Window:MakeTab({
 	Name = "空,斌脚本特供!",
 	Icon = "rbxassetid://7733779610",
