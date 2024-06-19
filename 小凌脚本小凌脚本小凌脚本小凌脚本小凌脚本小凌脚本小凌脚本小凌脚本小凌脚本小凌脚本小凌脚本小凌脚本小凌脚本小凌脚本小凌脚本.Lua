@@ -2003,3 +2003,17 @@ Tab:AddButton({
     getgenv().XC="作者XC"loadstring(game:HttpGet("https://pastebin.com/raw/PAFzYx0F"))()
   end
 })
+local Tab= Window:MakeTab({
+	Name = "林脚本破解版",
+	Icon = "rbxassetid://7733779610",
+	PremiumOnly = false
+})
+Tab:AddParagraph("SB林脚本还要付费")
+Tab:AddParagraph("缝合脚本还付费龙叔不同意!")
+Tab:AddButton({
+  Name = "林脚本AL团队破解",
+  Callback = function ()
+    AL = "Advanced Logic团队破解"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/longshu886/longscript/main/linpojie"))()
+  end
+})
