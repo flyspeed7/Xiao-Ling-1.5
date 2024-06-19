@@ -1981,10 +1981,15 @@ Tab:AddButton({
 })
 Tab:AddButton({
   Name = "Code X-ios",
-  Callback = function ()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/SPDM-Team/Arceus-X-NEO-public/main/Costumers/codex_ios.lua"))()
+  Callback = function () loadstring(game:HttpGet("https://raw.githubusercontent.com/SPDM-Team/Arceus-X-NEO-public/main/Costumers/codex_ios.lua"))()
   end
 })
+Tab:AddButton({
+  Name = "Tx3Xploit-UI",
+  Callback = function () loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/%E6%B3%A8%E5%85%A5%E5%99%A8"))()
+  end
+})
+
 local Tab= Window:MakeTab({
 	Name = "空,斌脚本特供!",
 	Icon = "rbxassetid://7733779610",
