@@ -36,7 +36,7 @@ local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/SePpsSPZ'))()
 local Window = OrionLib:MakeWindow({Name = "小凌中心-1.2.5", HidePremium = false, SaveConfig = true,IntroText = "感谢您执行小凌中心", ConfigFolder = "热烈欢迎"})
 local about = Window:MakeTab({
     Name = "₪信息",
-    Icon = "rbxassetid://773453495",
+    Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
 about:AddParagraph("您的用户名:"," "..game.Players.LocalPlayer.Name.."")
