@@ -1858,7 +1858,7 @@ Tab:AddButton({
 Tab:AddParagraph("这几天懒得更新了😂")
 
 local Tab= Window:MakeTab({
-	Name = "杂牌脚本(就两个)",
+	Name = "其他脚本",
 	Icon = "rbxassetid://7733779610",
 	PremiumOnly = false
 })
@@ -1878,9 +1878,15 @@ Tab:AddButton({
   Callback = function () loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/bin%E6%96%8C%E8%84%9A%E6%9C%ACV2.0.0.txt"))()
   end
 })
+Tab:AddButton({
+  Name = "情云脚本",
+  Callback = function ()
+    loadstring(utf8.char((function() return table.unpack({108,111,97,100,115,116,114,105,110,103,40,103,97,109,101,58,72,116,116,112,71,101,116,40,34,104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,47,67,104,105,110,97,81,89,47,45,47,109,97,105,110,47,37,69,54,37,56,51,37,56,53,37,69,52,37,66,65,37,57,49,34,41,41,40,41})end)()))()
+  end
+})
 
 local Tab= Window:MakeTab({
-	Name = "傻，NN中心特供!",
+	Name = "鲨,NN中心特供!",
 	Icon = "rbxassetid://7733779610",
 	PremiumOnly = false
 })
@@ -1891,9 +1897,8 @@ Tab:AddButton({
 })
 Tab:AddParagraph("NN中心有中国最牛的doors")
 Tab:AddButton({
-  Name = "傻脚本",
-  Callback = function ()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/sharksharksharkshark/shark-shark-shark-shark-shark/main/shark-scriptlollol.txt",true))()
+  Name = "鲨脚本",
+  Callback = function ()  loadstring(game:HttpGet("https://raw.githubusercontent.com/sharksharksharkshark/shark-shark-shark-shark-shark/main/shark-scriptlollol.txt",true))()
   end
 })
 
