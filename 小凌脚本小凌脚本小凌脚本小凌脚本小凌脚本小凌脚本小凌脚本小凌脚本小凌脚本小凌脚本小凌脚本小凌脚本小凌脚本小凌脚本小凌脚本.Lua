@@ -15,14 +15,14 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
-    Title = "小凌脚本-1.2.5",
+    Title = "小凌脚本-1.2.6",
     Text = "加载....已开启反挂机",
     Duration = 5, 
 })
 local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
     Title = "小凌中心的欢迎",
-    Text = "欢迎"..game.Players.LocalPlayer.Name.."，执行小凌中心",
+    Text = "欢迎"..game.Players.LocalPlayer.Name.."执行小凌中心",
     Duration = 5,
 })
 print("小凌中心滴反挂机已经为你开好了 喵~")
@@ -33,10 +33,10 @@ print("小凌中心滴反挂机已经为你开好了 喵~")
 		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
 local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/SePpsSPZ'))()
-local Window = OrionLib:MakeWindow({Name = "小凌中心-1.2.5", HidePremium = false, SaveConfig = true,IntroText = "感谢您执行小凌中心", ConfigFolder = "热烈欢迎"})
+local Window = OrionLib:MakeWindow({Name = "小凌中心-1.2.6", HidePremium = false, SaveConfig = true,IntroText = "感谢"..game.Players.LocalPlayer.Name.."执行小凌中心", ConfigFolder = "热烈欢迎"})
 local about = Window:MakeTab({
     Name = "₪信息",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://7734053495",
     PremiumOnly = false
 })
 about:AddParagraph("您的用户名:"," "..game.Players.LocalPlayer.Name.."")
@@ -44,12 +44,12 @@ about:AddParagraph("您的注入器:"," "..identifyexecutor().."")
 about:AddParagraph("您当前服务器的ID"," "..game.GameId.."")
 local Tab = Window:MakeTab({
   Name = "₪通用",
-  Icon = "rbxassetid://773453495",
+  Icon = "rbxassetid://7743866903",
   PremiumOnly = false
   })
   
  Tab:AddButton({
-	Name = "₪Krx(落叶中心)",
+	Name = "₪Krx(落叶中心)〔推荐〕",
 	Callback = function()
 getgenv().LS="落叶中心" loadstring(game:HttpGet("https://raw.githubusercontent.com/krlpl/Deciduous-center-LS/main/%E8%90%BD%E5%8F%B6%E4%B8%AD%E5%BF%83%E6%B7%B7%E6%B7%86.txt"))()
 end
@@ -302,7 +302,7 @@ end
 Tab:AddButton({
 	Name = "点击传送工具",
 	Callback = function()
-mouse = game.Players.LocalPlayer:GetMouse() tool = Instance.new("Tool") tool.RequiresHandle = false tool.Name = "点击传送鸭" tool.Activated:connect(function() local pos = mouse.Hit+Vector3.new(0,2.5,0) pos = CFrame.new(pos.X,pos.Y,pos.Z) game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos end) tool.Parent = game.Players.LocalPlayer.Backpack
+mouse = game.Players.LocalPlayer:GetMouse() tool = Instance.new("Tool") tool.RequiresHandle = false tool.Name = "小凌NB" tool.Activated:connect(function() local pos = mouse.Hit+Vector3.new(0,2.5,0) pos = CFrame.new(pos.X,pos.Y,pos.Z) game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos end) tool.Parent = game.Players.LocalPlayer.Backpack
 	end
 })
 
@@ -1141,28 +1141,24 @@ Tab:AddButton({
 	setclipboard("1211373508")
 end
 })
-Tab:AddButton({
-	Name = "公告",
-	Callback = function()
-end
-})
+Tab:AddParagraph("₪一个小公告ᴿᴼ̴ᴮᴸᴼ̴ˣ")
 Tab:AddParagraph("制作：小凌")
 Tab:AddParagraph("该脚本云端更新！")
 Tab:AddParagraph("谢谢群里的《你猜 喵~》帮我测试")
 Tab:AddParagraph("《一根葱是一个furry!!!》")
-Tab:AddParagraph("你别发神经啊")
+Tab:AddParagraph("大哥们V50看看实力(大哥如果没50就剪坤巴)")
 Tab:AddParagraph("缝合大佬小凌")
-Tab:AddParagraph("QB脚本作者对不起我不该骂你！！！")
-Tab:AddParagraph("退休对不起我不该开源的")
-about:AddParagraph("看得出来你是真心喜欢第五人格，有空我带带你吧，我现在五阶五，会在出刀时用飞轮，带你体验一下高端局。强者就是要羞辱弱者！我常年保持五阶的强劲实力","")
-about:AddParagraph("强者就是要羞辱弱者！我常年保持五阶的强劲实力，甚至巅峰时期上过c牌，手感好的时候甚至能打出遛60s这种高端操作，你知道预判闪现吗？我打过。","")
+Tab:AddParagraph("QB脚本对不起我不该骂你💔！！！")
+Tab:AddParagraph("退休对不起我不该开源的💀")
+about:AddParagraph("看得出来你是真心喜欢第五人格，有空我带带你吧，我现在五阶五，会在出刀时用飞轮，带你体验一下高端局。","")
+about:AddParagraph("退休用一下你的页面UI嘿嘿","")
 Tab:AddButton({
-	Name = "小凌💓",
+	Name = "小凌UwU",
 	Callback = function()
 end
 })
 Tab:AddButton({
-	Name = "⭐凌⭐",
+	Name = "⭐阿凌.AEX⭐",
 	Callback = function()
 end
 })
@@ -1181,7 +1177,7 @@ Tab:AddButton({
   end
 })
 Tab:AddButton({
-  Name = "doors中转站(白名单和key)",
+  Name = "doors中转站卡密：114514xhxh",
   Callback = function ()
     loadstring(game:HttpGet("https://shz.al/ySeKWSdaes8TiJbZTc2XzDiS"))()
     
@@ -1194,28 +1190,28 @@ Tab:AddButton({
   end
 })
 Tab:AddButton({
-  Name = "林脚本",
+  Name = "林脚本要白名(已破解)",
   Callback = function ()
-    lin = "作者林"lin ="林QQ群 747623342"loadstring(game:HttpGet("https://raw.githubusercontent.com/linnblin/lin/main/lin"))()
-    
+    AL = "Advanced Logic团队破解"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/longshu886/longscript/main/linpojie"))()
   end
 })
 Tab:AddButton({
-  Name = "HB中心",
+  Name = "HB中心(推荐)",
   Callback = function ()
     loadstring(game:HttpGet(utf8.char((function() return table.unpack({104,116,116,112,115,58,47,47,112,97,115,116,101,98,105,110,46,99,111,109,47,114,97,119,47,82,66,119,107,107,117,55,49})end)())))()
     
   end
 })
 Tab:AddButton({
-  Name = "HB中心-Beta",
+  Name = "HB中心-Beta(推荐)",
   Callback = function ()
     loadstring(game:HttpGet(utf8.char((function() return table.unpack({104,116,116,112,115,58,47,47,112,97,115,116,101,98,105,110,46,99,111,109,47,114,97,119,47,86,83,89,71,99,122,78,115})end)())))()
     
   end
 })
 Tab:AddButton({
-  Name = "导管中心",
+  Name = "导管中心(推荐)",
   Callback = function ()
  loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\117\115\101\114\97\110\101\119\114\102\102\47\114\111\98\108\111\120\45\47\109\97\105\110\47\37\69\54\37\57\68\37\65\49\37\69\54\37\65\67\37\66\69\37\69\53\37\56\68\37\56\70\37\69\56\37\65\69\37\65\69\34\41\41\40\41\10")()
     
@@ -1236,7 +1232,7 @@ Tab:AddButton({
   end
 })
 Tab:AddButton({
-  Name = "DOORS后门",
+  Name = "DOORS后门有源码",
   Callback = function ()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/mspaint/backdoor.lua"))()
   end
