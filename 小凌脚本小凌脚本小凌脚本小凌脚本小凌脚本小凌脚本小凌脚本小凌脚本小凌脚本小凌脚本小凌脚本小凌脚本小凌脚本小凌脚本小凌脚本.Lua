@@ -1988,26 +1988,21 @@ Tab:AddButton({
   end
 })
 local Tab= Window:MakeTab({
-	Name = "空,斌脚本特供!",
+	Name = "空脚本特供!(推荐)",
 	Icon = "rbxassetid://7733779610",
 	PremiumOnly = false
 })
 Tab:AddButton({
+  Name = "空脚本最新(推荐)",
+  Callback = function ()
+   getgenv().LS="空脚本最新" loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/obf_8AT8q36zDJ1F59bRSuHJi8dH4kHcd8uJQaj7r5eKYwt0JjMt1MWdwdvdA26AG85U.lua"))() 
+  end
+})
+
+Tab:AddButton({
   Name = "空脚本",
   Callback = function ()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/%E7%A9%BA%E8%84%9A%E6%9C%AC1.0.3.txt"))()
-  end
-})
-Tab:AddButton({
-  Name = "空-Doors＆Rooms",
-  Callback = function ()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/666.txt"))()
-  end
-})
-Tab:AddButton({
-  Name = "斌脚本-小凌破解卡密",
-  Callback = function ()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/bin%E6%96%8C%E8%84%9A%E6%9C%ACV2.0.0.txt"))()
   end
 })
 Tab:AddButton({
@@ -2022,17 +2017,7 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/%E7%A9%BA%E8%84%9A%E6%9C%AC666.txt"))()
   end
 })
-Tab:AddButton({
-	Name = "复制斌脚本卡密",
-	Callback = function()
-     setclipboard("bin2024HADE")
-  	end
-})
-Tab:AddButton({
-	Name = "斌脚本（目前已退圈）",
-	Callback = function()   loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\66\73\78\106\105\97\111\98\122\120\54\47\66\73\78\106\105\97\111\47\109\97\105\110\47\66\73\78\46\108\117\97\34\41\41\40\41\10")("BIN制作")
-  	end    
-})
+
 local Tab= Window:MakeTab({
 	Name = "林脚本破解版",
 	Icon = "rbxassetid://7733779610",
