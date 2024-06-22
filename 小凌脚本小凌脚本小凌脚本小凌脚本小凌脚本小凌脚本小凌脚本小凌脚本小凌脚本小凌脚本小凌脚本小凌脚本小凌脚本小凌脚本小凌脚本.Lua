@@ -13,13 +13,6 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
     Button2 = "关闭"
 })
 local CoreGui = game:GetService("StarterGui")
-
-CoreGui:SetCore("SendNotification", {
-    Title = "小凌中心-NEO-1.2.6",
-    Text = "加载....已开启反挂机",
-    Duration = 5, 
-})
-local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
     Title = "小凌中心的欢迎",
     Text = "欢迎"..game.Players.LocalPlayer.Name.."执行小凌中心",
@@ -69,11 +62,18 @@ local function HeartbeatUpdate()
 	FrameUpdateTable[1] = LastIteration
 	local CurrentFPS = (tick() - Start >= 1 and #FrameUpdateTable) or (#FrameUpdateTable / (tick() - Start))
 	CurrentFPS = CurrentFPS - CurrentFPS % 1
-	FpsLabel.Text = ("中国时间="..os.date("%H").."时"..os.date("%M").."分"..os.date("%S"))
+	FpsLabel.Text = ("中国时间:"..os.date("%H").."时钟时间"..os.date("%M").."分钟时间"..os.date("%S"))
 end
 Start = tick()
-local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/xLRUSiKx'))()
-local Window = OrionLib:MakeWindow({Name = "小凌中心-NEO.UI-1.2.7", HidePremium = false, SaveConfig = true,IntroText = "感谢"..game.Players.LocalPlayer.Name.."执行小凌中心", ConfigFolder = "大哥这是缝合脚本."})
+Heartbeat:Connect(HeartbeatUpdate)
+local CoreGui = game:GetService("StarterGui")
+CoreGui:SetCore("SendNotification", {
+    Title = "小凌的提示",
+    Text = "进入成功感谢您的游玩",
+    Duration = 5, 
+})
+local OrionLib = loadstring(game:HttpGet(('https://pastebin.com/raw/1mPger1J')))()
+local Window = OrionLib:MakeWindow({IntroText = "感谢"..game.Players.LocalPlayer.Name.."加载GUI",Name = "小凌中心-NEO.UI-1.2.7", HidePremium = false, SaveConfig = true, ConfigFolder = "大哥这缝合脚本啊"})
 local about = Window:MakeTab({
     Name = "₪信息",
     Icon = "rbxassetid://7734053495",
