@@ -62,7 +62,7 @@ local function HeartbeatUpdate()
 	FrameUpdateTable[1] = LastIteration
 	local CurrentFPS = (tick() - Start >= 1 and #FrameUpdateTable) or (#FrameUpdateTable / (tick() - Start))
 	CurrentFPS = CurrentFPS - CurrentFPS % 1
-	FpsLabel.Text = ("中国时间:"..os.date("%H").."时钟时间"..os.date("%M").."分钟时间"..os.date("%S"))
+	FpsLabel.Text = ("阿凌时间="..os.date("%H").."分"..os.date("%M").."秒"..os.date("%S"))
 end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
