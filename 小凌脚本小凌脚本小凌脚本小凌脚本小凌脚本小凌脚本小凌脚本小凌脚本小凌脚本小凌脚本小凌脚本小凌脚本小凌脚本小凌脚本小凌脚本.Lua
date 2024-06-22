@@ -15,7 +15,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
-    Title = "小凌脚本-1.2.6",
+    Title = "小凌中心-NEO-1.2.6",
     Text = "加载....已开启反挂机",
     Duration = 5, 
 })
