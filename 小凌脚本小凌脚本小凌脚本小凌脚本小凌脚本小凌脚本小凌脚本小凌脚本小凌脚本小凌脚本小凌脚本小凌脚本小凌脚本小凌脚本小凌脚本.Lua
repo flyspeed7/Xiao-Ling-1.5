@@ -2678,3 +2678,33 @@ Tab:AddButton({
   end
 })
 Tab:AddParagraph("脚本由〔湘鲁)安心c屎版提供〕")
+local Tab= Window:MakeTab({
+	Name = "俄亥俄州",
+	Icon = "rbxassetid://7733779610",
+	PremiumOnly = false
+})
+Tab:AddButton({
+  Name = "Rxn.xyz-HUB",
+  Callback = function ()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/rxn-xyz/Ohio./main/Ohio.lua",true))()
+  end
+})
+Tab:AddButton({
+  Name = "神奇的指令",
+  Callback = function ()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/longshulol/long/main/longshu/Ohio"))()
+  end
+})
+Tab:AddButton({
+  Name = "HkvHeHed-HUB",
+  Callback = function ()
+    loadstring(game:HttpGet("https://pastebin.com/raw/hkvHeHed",true))()
+  end
+})
+Tab:AddButton({
+  Name = "剑客工作室",
+  Callback = function ()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/jiankeQWQ/jiankeV3/main/ehaiezhou"))()
+  end
+})
+Tab:AddParagraph("功能自己猜")
