@@ -66,7 +66,7 @@ local function HeartbeatUpdate()
 end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/flyspeed7/Xiao_Ling.White/main/%E5%A4%96%E5%9B%BD%E7%83%AD%E9%97%A8%E7%99%BD%E8%89%B2UI.Lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/flyspeed7/XL.UI-C/main/.cn.m4399.udid.txt"))()
 local Window = OrionLib:MakeWindow({IntroText = "感谢"..game.Players.LocalPlayer.Name.."加载GUI",Name = "冬凌中心-NEO.UI-1.2.8", HidePremium = false, SaveConfig = true, ConfigFolder = "大哥这缝合脚本啊"})
 local about = Window:MakeTab({
     Name = "₪信息",
