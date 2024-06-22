@@ -72,10 +72,8 @@ local function HeartbeatUpdate()
 	FpsLabel.Text = ("中国时间="..os.date("%H").."时"..os.date("%M").."分"..os.date("%S"))
 end
 Start = tick()
-game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "正在加入小凌中心"; Text ="请等一下啊"; Duration = 4; })
 local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/xLRUSiKx'))()
 local Window = OrionLib:MakeWindow({Name = "小凌中心-NEO.UI-1.2.7", HidePremium = false, SaveConfig = true,IntroText = "感谢"..game.Players.LocalPlayer.Name.."执行小凌中心", ConfigFolder = "大哥这是缝合脚本."})
-game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "欢迎加入小凌中心"; Text ="小凌中心"; Duration = 4; })
 local about = Window:MakeTab({
     Name = "₪信息",
     Icon = "rbxassetid://7734053495",
