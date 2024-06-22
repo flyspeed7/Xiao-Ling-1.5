@@ -66,12 +66,6 @@ local function HeartbeatUpdate()
 end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "小凌的提示",
-    Text = "进入成功感谢您的游玩",
-    Duration = 5, 
-})
 local OrionLib = loadstring(game:HttpGet(('https://pastebin.com/raw/1mPger1J')))()
 local Window = OrionLib:MakeWindow({IntroText = "感谢"..game.Players.LocalPlayer.Name.."加载GUI",Name = "小凌中心-NEO.UI-1.2.7", HidePremium = false, SaveConfig = true, ConfigFolder = "大哥这缝合脚本啊"})
 local about = Window:MakeTab({
